@@ -224,7 +224,7 @@ export default function Home() {
                   <div class="whoWeAreFirst">
                     <img
                       class="whoWeAreThirdInner"
-                      src="/images/whoWeAreThirdInner.png"
+                      src="/images/WhoWeAreThirdInner.png"
                     ></img>
                   </div>
                 </Col>

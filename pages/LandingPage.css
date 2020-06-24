@@ -1,0 +1,878 @@
+/* Style the header with a grey background and some padding */
+
+/* @font-face {
+	font-family: PTSans-Regular;
+	src: url('/fonts/PTSans-Regular.ttf');
+} */
+
+html{
+  height: 100%;
+}
+
+.hide{
+  display: none;
+}
+
+.header {
+    overflow: hidden;
+    padding: 15px 10px;
+    background-color: #1C77B0;
+}
+
+/* Style the header links */
+
+.header .header-left a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+   
+}
+
+/* Change the background color on mouse-over */
+
+.header a:hover {
+    background-color:none;
+    color:#FF8B00;
+}
+
+/* Style the active/current link*/
+
+.header a.active {
+  background-color:none;
+  color:#FF8B00;
+}
+
+/* Float the link section to the left */
+
+.header-left {
+    float: left;
+}
+
+.header .login-strip {
+    float: right;
+    margin: 8px 0 0;
+}
+
+.login-strip a {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+.login-strip a.register-btn {
+    color: white;
+    border: 2px solid white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 0 0 0 10px;
+}
+
+.header.stickHeader {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #1C77B0;
+    box-shadow: 0px 2px 2px #ccc;
+    z-index: 100;
+}
+
+
+
+/* widget common css */
+
+.theme-widget {
+    padding: 70px 0px;
+}
+
+#intro{
+  /* background: url("HeroBackground.png") no-repeat; */
+  min-height: inherit;
+  padding: 0px;
+ 
+}
+
+#intro .rhs-content {
+   
+   
+    text-align: right;
+    margin-top: -490px;
+    margin-left: 650px;
+    
+}
+
+#intro .rhs-content h2 {
+    font-size: 42px;
+    line-height: 56px;
+    color: #1C77B0;
+    /* margin-bottom: 20px; */
+    
+}
+
+#intro .rhs-content h3 {
+    /* float: left; */
+    font-size: 36px;
+    line-height: 45px;
+    color: #FF8B00;
+    /* padding-left: 200px; */
+    
+}
+
+#intro .column{
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+
+}
+
+#intro .column:first-of-type{
+  width: 40%;
+}
+
+#intro:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+
+#intro .row:first-of-type{
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+
+#heroImage img{
+  width: 100%;
+  height: 90%;
+  
+  
+}
+
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+   
+    /* height: 470px; */
+}
+
+.container:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+
+
+/* .carousel-item {
+    background: linear-gradient(to right, #fff 50%, #1C77B0 50%);
+    height: auto;
+} */
+
+#aboutUs{
+  /* padding: 0; */
+  /* background:linear-gradient(to bottom, #ecf0f3 50%, #298FCF); */
+  background: url("/images/AboutUsBackground.png") no-repeat;
+   
+}
+/* .carousel-item:nth-of-type(2){
+  background: url("/images/AboutUs2Background.png") no-repeat top left;
+  background-size: cover;
+} */
+
+.firstSLideAboutUs{
+    background: url("/images/AboutUS1.png") no-repeat;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+   
+}
+
+.secondSLideAboutUs{
+  background: url("/images/AboutUS2.png") no-repeat center bottom;
+  width: auto;
+  height: 280px;
+  margin: 120px auto 0;
+  background-size: contain;
+}
+
+/* .aboutUs2Background{
+  background: url("AboutUs2Background.png") no-repeat top left;
+  background-size: cover;
+  
+} */
+
+.thirdSLideAboutUs{
+  background: url("/images/AboutUS3.png") no-repeat;
+  width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+
+.firstSlideText{
+    float: left;
+}
+/* .carousel-caption{
+    bottom: inherit;
+    top: 20px;
+    text-align: left !important;
+} */
+
+/* .carousel-caption h3, .carousel-caption p {
+    color: black;
+} */
+.defaultBackground{
+  background: url("/images/SellerNew.png") no-repeat left bottom;
+   background-size: cover; 
+  width: 100% !important;
+  height: 660px;
+
+}
+
+.buyerBackground{
+ background: url("/images/BuyerNew.png") no-repeat left bottom;
+ width: 100% !important;
+  height: 660px;
+  background-size: cover; 
+}
+
+.financiarBackground{
+   background: url("/images/FinanceNew.png") no-repeat left bottom;
+   width: 100% !important;
+  height: 660px;
+  background-size: cover; 
+}
+
+.sliderText p{
+  margin-bottom: 0px;
+}
+
+
+.baseContent{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 70px 0px;
+  color: #fff;
+  top: 0;
+}
+.baseWrapper{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  height: 100%;
+
+}
+.baseWrapper p{
+  display: table-cell;
+  text-align: center;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  vertical-align: bottom;
+  /* border-left: 1px solid #fff; */
+  
+}
+
+
+
+/* .baseWrapper p:first-of-type{
+  border: none;
+} */
+
+/* .baseWrapper p.active{
+  color: #FF8B00;
+} */
+
+
+#benefits{
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+
+#testimonials{
+  background: url("/images/RxilBackground.png") no-repeat;
+  background-size: cover; 
+  min-height: inherit;
+}
+#newsEvents,#resources{
+  background-color: #CBE1EF;
+}
+
+#newsEvents .column{
+  min-height: 420px;
+}
+
+#newsEvents .card{
+  border: none;
+  text-align: center;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: lightgray;
+  height: 250px;
+  border-radius: 10px;
+}
+
+#newsEvents .card-body{
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  margin-left: -60px;
+  padding : 0px;
+
+}
+
+#newsEvents .card-body button{
+  min-width: 120px;
+}
+
+#newsEvents .btn:hover {
+  background-color:#FF8B00 !important;
+} 
+
+#newsEvents .row{
+  justify-content: center;
+  display: flex;
+}
+
+#resources .btn:hover {
+  background-color:#FF8B00 !important;
+}
+
+#resources .column{
+  min-height: 420px;
+}
+
+#resources .card{
+  border: none;
+  text-align: center;
+  margin: 0 20px;
+  padding: 20px;
+  background-color:#C1C1C0;
+  height: 250px;
+  border-radius: 10px;
+}
+
+#resources .card-body{
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  margin-left: -100px;
+  padding : 0px;
+
+}
+
+#resources .card-body button{
+  min-width: 200px;
+}
+
+#resources .row{
+  justify-content: center;
+  display: flex;
+}
+
+/* .faqImage{
+  width: 260px;
+} */
+
+.footerLinks a{
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+
+.footerLinks a:last-of-type{
+  border-bottom: none;
+}
+#contactUs{
+  background-color:#d0e4ec;
+  padding: 70px 0px 0px;
+  min-height: inherit;
+  background: url("/images/ContactUsBackground.png") no-repeat;
+  background-size: cover; 
+
+}
+.copyRightStrip{
+  text-align: center;
+  padding: 15px 10px;
+  background-color:#AFAFAF;
+} 
+
+.copyRightStrip p{
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+#resources .resourcesHeading p{
+  color:#FF8B00;
+  position: relative;
+  margin-left: 35px;
+
+  
+}
+
+#newsEvents .newsEventsHeading p,#promoters .newsEventsHeading p ,#testimonials .testimonialsHeading p{
+  color:#FF8B00;
+  position: relative;
+  margin-left: 35px;
+  
+}
+
+#newsEvents .newsEventsHeading p:after,#promoters .newsEventsHeading p:after ,#testimonials .testimonialsHeading p:after, #resources .resourcesHeading p:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #FF8B00;  
+  top: 16px;
+  left: -25px;
+}
+
+.sliderText {
+  margin-left: 10px;
+}
+
+
+.promoterImage{
+  margin-top: 20px;
+  padding: 0 50px;
+  display: table;
+  width: 100%;
+
+
+}
+.promoterImage a{
+  /* width: 100%; */
+  display: table-cell;
+  padding: 0 20px;
+  table-layout: fixed;
+}
+
+section#promoters{
+  min-height: auto;
+}
+
+
+
+/* #contactUs .row{
+  height: 340px;
+} */
+section{
+  min-height: 100vh;
+}
+
+#aboutUs img{
+  /* height: 70%;
+  width: 100%;
+  margin-top: -60px;
+  margin-left: -40px;
+  margin-right: -40px; */
+
+    height: 600px;
+    width: 108%;
+    margin-top: -60px;
+    margin-left: -40px;
+    margin-right: 90px;
+} 
+
+
+#testimonials .card-img-top{
+  margin-left: 0px;
+  margin-top: 5px;
+  width: 30% !important;
+}
+
+#testimonials .row{
+  justify-content: center;
+  display: flex;
+} 
+
+
+#testimonials .col{
+  padding-left:70px;
+} 
+
+
+
+.testimonialComma1{
+  background: url("/images/TestimonialsComma.png") no-repeat;
+  margin-top: -20px;
+  margin-left: -21px;
+}
+
+#testimonials .card{
+  
+  text-align: center;
+  margin: 0 20px;
+  padding: 20px;
+  background-color:#fff;
+  height: 350px;
+  border-radius: 10px;
+}
+
+#testimonials .card-body{
+  position: absolute;
+  bottom: 0pxpx;
+  left: 50%;
+  margin-left: -205px;
+  padding : 15px;
+
+}
+
+.line{
+ height:2px;
+ border-width:0;
+ color:gray;
+ background-color:gray;
+}
+
+
+/* about us css */
+.aboutUsSecond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vmin;
+  overflow: hidden;
+  
+  /* transform: skew(5deg); */
+}
+.aboutUsSecond .card {
+  flex: 1;
+  transition: all 1s ease-in-out;
+  height: 75vmin;
+  position: relative;
+  box-shadow: inset 8px 0 6px -6px #999;
+  background: none;
+  overflow: hidden;
+}
+.aboutUsSecond .card .card__head {
+  color: #1C77B0;
+  background:#fff;
+  padding: 0.5em;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  transition: all 0.5s ease-in-out;
+  min-width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1em;
+  white-space: nowrap;
+  box-shadow: 0 0 5px #333;
+  border-radius: 0px 0px 10px 10px;
+  font-weight: bold;
+}
+.aboutUsSecond .card:hover {
+  flex-grow: 10;
+}
+.aboutUsSecond .card:hover img {
+  filter: grayscale(0);
+}
+.aboutUsSecond .card:hover .card__head {
+  text-align: center;
+  top: calc(100% - 2em);
+  color:#1C77B0;
+  background:#fff;
+  font-size: 2em;
+  transform: rotate(0deg);
+  border-radius: 0;
+}
+
+.aboutUsSecond .card:hover .aboutUsKnowMore{
+  display: block;
+}
+
+.aboutUsSecond .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  filter: grayscale(100%);
+}
+.aboutUsSecond .card:not(:nth-child(5)) {
+  margin-right: 1em;
+}
+
+.aboutUsKnowMore{
+  display: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.aboutUsFirst{
+  position: relative;
+  background: url("/images/WhatIsTredsAndWhy.png") no-repeat center top;
+  width: 100%;
+  height: 350px;
+  background-size: contain;
+}
+
+.aboutUsFirst p{
+  position: absolute;
+  bottom: -110px;
+  right: 20px;
+}
+
+.aboutUsSecond .card:hover .aboutUsFirst,.aboutUsSecond .card:hover .aboutUsSecondStyle {
+  
+  background-position:left top;
+}
+
+.aboutUsSecond .card:hover .aboutUsFirst p{
+  
+  bottom: 100px;
+  right: 200px;
+}
+
+.aboutUsSecondStyle{
+  position: relative;
+  background: url("/images/HowItWorks.png") no-repeat center top;
+  width: 100%;
+  
+  height: 320px;
+  background-size: contain;
+}
+
+
+.aboutUsSecondStyle p{
+  position: absolute;
+  bottom: -140px;
+  right: 20px;
+  max-width: 280px;
+}
+
+.aboutUsSecond .card:hover .aboutUsSecondStyle p{
+  
+  bottom: 100px;
+  right: 200px;
+}
+
+.aboutUsThirdStyle{
+  /* background: url("/images/HowItWorks.png") no-repeat; */
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.aboutUsThirdStyle p{
+  margin-top:300px;
+  margin-left: 400px;
+  margin-bottom: 300px;
+}
+
+#whoWeAre{
+  /* padding: 0; */
+  background-color:#f5f5f5;
+   
+}
+
+#whoWeAre .carousel-control-next-icon{
+  background: url("/images/LeftArrow.png") no-repeat !important;
+  height: 51px;
+  width: 86px;
+  bottom: 50px;
+  position: absolute;
+ 
+}
+
+#whoWeAre .carousel-control-next{
+  right: 55% !important;
+}
+
+
+#whoWeAre .col-md-7 .carousel-control-next-icon{
+  background-image: none !important;
+  height: 20px !important;
+  width: 20px !important;
+  bottom: inherit !important;
+  position: static !important;
+  
+  
+ 
+}
+
+#whoWeAre .col-md-7 .carousel-control-next{
+  right: 0 !important;
+}
+
+/* .arrowImage{
+  position: absolute;
+  left: -110px;
+  bottom: 30px;
+
+} */
+
+#whoWeAre .whoWeAreFirst{
+  /* background: url("/images/WhoWeAreFirst.png") no-repeat top left;
+  width: 100%;
+  height: 100%;
+  margin-top: -84px;
+  background-size: cover;  */
+  padding: 10px 0px;
+}
+
+#whoWeAre .whoWeAreFirstInner{
+  /* background: url("/images/WhoWeAreFirstInner.png") no-repeat top left;
+  width: 420px;
+  height: 262px;
+  margin-left: 62px;
+  margin-top: 70px;
+ 
+  background-size: cover;  */
+  width: 100%;
+  box-shadow: 0px 0px 5px #333;
+  display: block;
+}
+
+
+#whoWeAre .whoWeAreSecondInner{
+  /* background: url("/images/WhoWeAreSecondInner.png") no-repeat top left; */
+  width:100%;
+  box-shadow: 0px 0px 5px #333;
+  display: block;
+}
+
+
+#whoWeAre .whoWeAreThirdInner{
+  /* background: url("/images/WhoWeAreThirdInner.png") no-repeat top left; */
+  width:100%;
+  box-shadow: 0px 0px 5px #333;
+  display: block;
+}
+
+#whoWeAre .whoWeAreFourthInner{
+  /* background: url("/images/WhoWeAreFourthInner.png") no-repeat top left; */
+  width:100%;
+  box-shadow: 0px 0px 5px #333;
+  display: block;
+}
+
+
+#whoWeAre .card-img-top{
+  width: 80%;
+  padding-top: 10px;
+}
+
+#whoWeAre .boardOfDirectors{
+  text-align: center;
+  background: none;
+}
+
+.readMore{
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    font-size: 25px;
+    line-height: 15px;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+    overflow: hidden;
+    text-align: center;
+    padding-left: 1px;
+    
+}
+
+.readMore:hover{
+  width: 100px;
+  border-radius: 15px;
+  
+}
+
+
+
+.hoverReadmore{
+  /* display: inline-block; */
+  font-size: 13px;
+  font-weight: normal;
+  vertical-align: middle;
+  margin: -4px 0 0 5px;
+  /* display: none;
+  transition-delay: 0.5s; */
+}
+
+.readMore:hover .hoverReadmore{
+  display: inline-block;
+}
+
+/* #whoWeAre .row{
+  height: 334px;
+} */
+
+
+body .carousel-indicators{
+  bottom: -45px;
+}
+
+body .carousel-indicators li{
+    background-color: #1C77B0;
+    opacity: 1;
+}
+
+body .carousel-indicators li.active, body .col-md-7 .carousel-indicators li.active{
+  background-color: #FF8B00;
+  
+}
+
+body .col-md-7 .carousel-indicators li{
+  background-color: #707070;
+  
+}
+
+.boardOfDirectorInnerClass{
+  background-color:#CBE1EF;
+  height: 501px;
+  box-shadow: 0px 0px 5px #333;
+}
+
+.boardOfDirectorInnerClass .card{
+  background: none;
+  border: none;
+
+}
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-left {
+        float: none;
+    }
+}

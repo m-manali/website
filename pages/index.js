@@ -98,7 +98,7 @@ export default function Home() {
                 facilitating access to credit by <br />
                 financing trade receivables of MSMEs
                 <br /> through multiple financiers.{" "}
-                <a style={{ color: "#FF8B00" }} class="aboutUsKnowMore">
+                <a href="#" style={{ color: "#FF8B00" }} class="aboutUsKnowMore">
                   Know More ...
                 </a>
               </p>
@@ -112,7 +112,7 @@ export default function Home() {
                 RXIL has reimagined access to capital <br />
                 for small businesses <br /> through its TReDS platform. <br />{" "}
                 With an entirely digital process right from onboarding.
-                <a style={{ color: "#FF8B00" }} class="aboutUsKnowMore">
+                <a  href="#" style={{ color: "#FF8B00" }} class="aboutUsKnowMore">
                   Know More ...
                 </a>
               </p>
@@ -126,7 +126,7 @@ export default function Home() {
                 RXIL has reimagined access to <br /> capital for small
                 businesses <br /> through its TReDS platform. <br /> With an
                 entirely digital process right from onboarding.
-                <a style={{ color: "#FF8B00" }} class="aboutUsKnowMore">
+                <a  href="#" style={{ color: "#FF8B00" }} class="aboutUsKnowMore">
                   Know More ...
                 </a>
               </p>
@@ -843,5 +843,11 @@ if (process.browser) {
   $(document).ready(function(){
     $('body').css("padding-top",$('.header').outerHeight());
   }); 
+
+
+  //hide text for about us
+  // $(document).on("mouseover", ".baseWrapper p", function () {
+    
+  // });
   
 }

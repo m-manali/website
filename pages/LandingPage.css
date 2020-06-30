@@ -40,6 +40,7 @@ html{
     font-size: 25px;
     font-weight: bold;
     float: left;
+    margin-right: 20px;
    
 }
 
@@ -318,11 +319,13 @@ html{
 }
 #newsEvents,#resources{
   background-color: #CBE1EF;
+  height: auto !important;
+  min-height: auto !important;
 }
 
-#newsEvents .column{
+/* #newsEvents .column{
   min-height: 420px;
-}
+} */
 
 #newsEvents .card{
   border: none;
@@ -360,9 +363,9 @@ html{
   background-color:#FF8B00 !important;
 }
 
-#resources .column{
+/* #resources .column{
   min-height: 420px;
-}
+} */
 
 #resources .card{
   border: none;
@@ -411,7 +414,7 @@ html{
   background-color:#d0e4ec;
   padding: 70px 0px 0px;
   min-height: inherit;
-  background: url("/images/ContactUsBackground.png") no-repeat;
+  background: url("/images/ContactUsBackground.png") no-repeat center center;
   background-size: cover; 
 
 }
@@ -430,6 +433,7 @@ html{
   color:#FF8B00;
   position: relative;
   margin-left: 35px;
+  display: inline-block;
 
   
 }
@@ -438,6 +442,7 @@ html{
   color:#FF8B00;
   position: relative;
   margin-left: 35px;
+  display: inline-block;
   
 }
 
@@ -452,6 +457,9 @@ html{
   left: -25px;
 }
 
+/* #newsEvents .newsEventsHeading,#promoters .newsEventsHeading,#testimonials .testimonialsHeading,#resources .resourcesHeading{
+  text-align: center;
+} */
 .sliderText {
   margin-left: 10px;
 }
@@ -468,8 +476,12 @@ html{
 .promoterImage a{
   /* width: 100%; */
   display: table-cell;
-  padding: 0 20px;
+  padding: 0 35px;
   table-layout: fixed;
+}
+
+.promoterImage a img{
+  width: 100%;
 }
 
 section#promoters{
@@ -484,6 +496,7 @@ section#promoters{
 section{
   min-height: 100vh;
 }
+
 
 #aboutUs img{
   /* height: 70%;
@@ -720,7 +733,7 @@ html {
 }
 
 #whoWeAre .carousel-control-next-icon {
-  background: url("/images/RIghtArrow.png") no-repeat !important;
+  background: url("/images/RightArrow.png") no-repeat !important;
   height: 51px;
   width: 86px;
   bottom: 50px;
@@ -919,6 +932,56 @@ body #whoWeAre .col-md-7 .carousel-control-prev{
   background: none;
   border: none;
 
+}
+
+.socialShare a{
+  display: block;
+  float: left;
+  margin-right: 25px;
+}
+
+.socialShare:after{
+  display: block;
+  content: "";
+  clear: both;
+  
+}
+
+.copyRight{
+  text-align: center;
+  background-color: #AFAFAF;
+  color: #fff;
+  padding: 10px 0px;
+}
+
+.copyRight p{
+  margin-bottom: 0;
+}
+
+.newsLetter{
+  position: relative;
+  display: inline-block;
+  
+}
+
+.newsLetter input{
+  border: 1px solid #1C77B0;
+  padding: 10px 40px 10px 10px;
+  
+}
+
+.newsLetter button{
+  background-color: #1C77B0;
+  color:#fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  width: 46px;
+  
 }
 
 

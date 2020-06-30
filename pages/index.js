@@ -29,7 +29,7 @@ export default function Home() {
             />
           </a>
           <div class="header-left menu">
-            <a class="active" href="#" data-category="aboutUs">
+            <a href="#" data-category="aboutUs">
               TReDS
             </a>
             <a href="#" data-category="whoWeAre">
@@ -98,7 +98,11 @@ export default function Home() {
                 facilitating access to credit by <br />
                 financing trade receivables of MSMEs
                 <br /> through multiple financiers.{" "}
-                <a href="#" style={{ color: "#FF8B00" }} class="aboutUsKnowMore">
+                <a
+                  href="#"
+                  style={{ color: "#FF8B00" }}
+                  class="aboutUsKnowMore"
+                >
                   Know More ...
                 </a>
               </p>
@@ -112,7 +116,11 @@ export default function Home() {
                 RXIL has reimagined access to capital <br />
                 for small businesses <br /> through its TReDS platform. <br />{" "}
                 With an entirely digital process right from onboarding.
-                <a  href="#" style={{ color: "#FF8B00" }} class="aboutUsKnowMore">
+                <a
+                  href="#"
+                  style={{ color: "#FF8B00" }}
+                  class="aboutUsKnowMore"
+                >
                   Know More ...
                 </a>
               </p>
@@ -126,7 +134,11 @@ export default function Home() {
                 RXIL has reimagined access to <br /> capital for small
                 businesses <br /> through its TReDS platform. <br /> With an
                 entirely digital process right from onboarding.
-                <a  href="#" style={{ color: "#FF8B00" }} class="aboutUsKnowMore">
+                <a
+                  href="#"
+                  style={{ color: "#FF8B00" }}
+                  class="aboutUsKnowMore"
+                >
                   Know More ...
                 </a>
               </p>
@@ -323,7 +335,7 @@ export default function Home() {
                         <Container>
                           <Row>
                             <Col>
-                              <Card >
+                              <Card>
                                 <div class="boardOfDirectors">
                                   <Card.Img
                                     variant="top"
@@ -338,7 +350,7 @@ export default function Home() {
                               </Card>
                             </Col>
                             <Col>
-                              <Card >
+                              <Card>
                                 <div class="boardOfDirectors">
                                   <Card.Img
                                     variant="top"
@@ -616,12 +628,21 @@ export default function Home() {
         <div class="promoterImage">
           {/* <img src="/images/Promoters.png" alt="" /> */}
 
-          <a href="#"><img src="/images/Promotor1.png"></img></a>
-          <a href="#"><img src="/images/Promotor2.png"></img></a>
-          <a href="#"><img src="/images/Promotor3.png"></img></a>
-          <a href="#"><img src="/images/Promotor4.png"></img></a>
-          <a href="#"><img src="/images/Promotor5.png"></img></a>
-
+          <a href="#">
+            <img src="/images/Promotor1.png"></img>
+          </a>
+          <a href="#">
+            <img src="/images/Promotor2.png"></img>
+          </a>
+          <a href="#">
+            <img src="/images/Promotor3.png"></img>
+          </a>
+          <a href="#">
+            <img src="/images/Promotor4.png"></img>
+          </a>
+          <a href="#">
+            <img src="/images/Promotor5.png"></img>
+          </a>
         </div>
       </section>
       {/*  Promotors Section ends here*/}
@@ -701,6 +722,10 @@ export default function Home() {
                 <p>Bandra Kurla Complex, Bandra(East),</p>
                 <p>Mumbai 400051</p>
               </div>
+              <div class="newsLetter">
+                <input type="text" placeholder="NEWSLETTER"></input>
+                <button>&#62;</button>
+              </div>
             </Col>
           </Row>
           <Row>
@@ -733,32 +758,44 @@ export default function Home() {
             </Col>
             <Col>
               <div>
-                <p>
-                  <img
-                    src="/images/FacebookIcon.png"
-                    alt=""
-                    width="20px"
-                    height="25px"
-                  />{" "}
-                  <img
-                    src="/images/TwitterIcon.png"
-                    alt=""
-                    width="25px"
-                    height="25px"
-                  />{" "}
-                  <img
-                    src="/images/LinkedInIcon.png"
-                    alt=""
-                    width="25px"
-                    height="25px"
-                  />
+                <p class="socialShare">
+                  <a href="#">
+                    {" "}
+                    <img
+                      src="/images/FacebookIcon.png"
+                      alt=""
+                      width="20px"
+                      height="25px"
+                    />
+                  </a>{" "}
+                  <a href="#">
+                    <img
+                      src="/images/TwitterIcon.png"
+                      alt=""
+                      width="25px"
+                      height="25px"
+                    />
+                  </a>{" "}
+                  <a href="#">
+                    <img
+                      src="/images/LinkedInIcon.png"
+                      alt=""
+                      width="25px"
+                      height="25px"
+                    />
+                  </a>
                 </p>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-
+      <div class="copyRight">
+        <p>
+          <span>&#169;</span> 2020 Receivables Exchange of India Limited. All
+          rights reserved.
+        </p>
+      </div>
       {/* Contact Us Section Ends Here */}
     </div>
   );
@@ -784,12 +821,20 @@ if (process.browser) {
   $(document).on("click", ".menu a", function () {
     console.log("inside menu click");
     var getattr = $(this).attr("data-category");
-    if(getattr == 'aboutUs'){
-     var targetscroll = $("#" + getattr).offset().top - ($('.header').outerHeight() - 90);// - 70;
-    }else{
-      var targetscroll = $("#" + getattr).offset().top - ($('.header').outerHeight() - 70);// - 70;   
+    if (getattr == "aboutUs") {
+      var targetscroll =
+        $("#" + getattr).offset().top - ($(".header").outerHeight() - 90); // - 70;
+    } else if (getattr == "benefits") {
+      var targetscroll =
+        $("#" + getattr).offset().top - ($(".header").outerHeight() - 30); // - 70;
+    } else if (getattr == "whoWeAre") {
+      var targetscroll =
+        $("#" + getattr).offset().top - ($(".header").outerHeight() - 55); // - 70;
+    } else {
+      var targetscroll =
+        $("#" + getattr).offset().top - ($(".header").outerHeight() - 70); // - 70;
     }
-      
+
     $("html, body").animate({
       scrollTop: targetscroll,
     });
@@ -840,14 +885,15 @@ if (process.browser) {
     });
   });
 
-  $(document).ready(function(){
-    $('body').css("padding-top",$('.header').outerHeight());
-  }); 
+  $(document).ready(function () {
+    $("body").css("padding-top", $(".header").outerHeight());
+  });
 
-
-  //hide text for about us
-  // $(document).on("mouseover", ".baseWrapper p", function () {
-    
-  // });
-  
+  //adjust intro height on load
+  $(document).ready(function () {
+    $("section#intro").css(
+      "height",
+      $("section#intro").outerHeight() - $(".header").outerHeight()
+    );
+  });
 }

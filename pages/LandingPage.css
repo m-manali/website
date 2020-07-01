@@ -412,7 +412,7 @@ html{
 }
 #contactUs{
   background-color:#d0e4ec;
-  padding: 70px 0px 0px;
+  /* padding: 70px 0px 0px; */
   min-height: inherit;
   background: url("/images/ContactUsBackground.png") no-repeat center center;
   background-size: cover; 
@@ -674,7 +674,7 @@ html {
   display: block;
 }
 
-.aboutUsSecond .card:hover .aboutUsFirst,.aboutUsSecond .card:hover .aboutUsSecondStyle {
+.aboutUsSecond .card:hover .aboutUsFirst,.aboutUsSecond .card:hover .aboutUsSecondStyle, .aboutUsSecond .card:hover .aboutUsThirdStyle {
   
   background-position: 25px top;
   height: 405px;
@@ -693,6 +693,7 @@ html {
   
   height: 320px;
   background-size: contain;
+  background-position: 50px 0px;
 }
 
 
@@ -712,18 +713,29 @@ html {
 }
 
 .aboutUsThirdStyle{
-  /* background: url("/images/HowItWorks.png") no-repeat; */
+  background: url("/images/Factoring.png") no-repeat center top;
   width: 100%;
-  height: 100%;
+  height: 320px;
+  background-size: contain;
+  position: relative;
+  background-position: 50px 0px;
+  
 }
 
 
 
 .aboutUsThirdStyle p{
-  margin-top:300px;
-  margin-left: 400px;
-  margin-bottom: 300px;
+  position: absolute;
+  bottom: -140px;
+  right: 20px;
+  max-width: 280px;
   display: block;
+}
+
+.aboutUsSecond .card:hover .aboutUsThirdStyle p{
+  font-size: 20px;
+  bottom: 100px;
+  right: 150px;
 }
 
 #whoWeAre{

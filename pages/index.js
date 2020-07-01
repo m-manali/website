@@ -826,7 +826,7 @@ if (process.browser) {
         $("#" + getattr).offset().top - ($(".header").outerHeight() - 90); // - 70;
     } else if (getattr == "benefits") {
       var targetscroll =
-        $("#" + getattr).offset().top - ($(".header").outerHeight() - 30); // - 70;
+        $("#" + getattr).offset().top - ($(".header").outerHeight() - 15); // - 70;
     } else if (getattr == "whoWeAre") {
       var targetscroll =
         $("#" + getattr).offset().top - ($(".header").outerHeight() - 55); // - 70;

@@ -31,7 +31,7 @@ html{
     line-height: 25px;
     border-radius: 4px;
     font-weight: bold;
-    
+
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -41,7 +41,7 @@ html{
     font-weight: bold;
     float: left;
     margin-right: 20px;
-   
+
 }
 
 /* Change the background color on mouse-over */
@@ -105,16 +105,16 @@ html{
   /* background: url("HeroBackground.png") no-repeat; */
   min-height: inherit;
   padding: 0px;
- 
+
 }
 
 #intro .rhs-content {
-   
-   
+
+
     text-align: right;
     margin-top: -490px;
     margin-left: 650px;
-    
+
 }
 
 #intro .rhs-content h2 {
@@ -122,7 +122,7 @@ html{
     line-height: 56px;
     color: #1C77B0;
     /* margin-bottom: 20px; */
-    
+
 }
 
 #intro .rhs-content h3 {
@@ -131,7 +131,7 @@ html{
     line-height: 45px;
     color: #FF8B00;
     /* padding-left: 200px; */
-    
+
 }
 
 #intro .column{
@@ -160,8 +160,8 @@ html{
 #heroImage img{
   width: 100%;
   height: 90%;
-  
-  
+
+
 }
 
 .container {
@@ -170,7 +170,7 @@ html{
     margin: 0 auto;
     padding-left: 50px !important;
     padding-right: 50px !important;
-   
+
     /* height: 470px; */
 }
 
@@ -192,7 +192,7 @@ html{
   /* background:linear-gradient(to bottom, #ecf0f3 50%, #298FCF); */
   background: url("/images/AboutUsBackground.png") no-repeat;
   background-size: cover;
-   
+
 }
 /* .carousel-item:nth-of-type(2){
   background: url("/images/AboutUs2Background.png") no-repeat top left;
@@ -204,7 +204,7 @@ html{
     width: 800px;
     height: 400px;
     margin: 0 auto;
-   
+
 }
 
 .secondSLideAboutUs{
@@ -218,7 +218,7 @@ html{
 /* .aboutUs2Background{
   background: url("AboutUs2Background.png") no-repeat top left;
   background-size: cover;
-  
+
 } */
 
 .thirdSLideAboutUs{
@@ -243,7 +243,7 @@ html{
 } */
 .defaultBackground{
   background: url("/images/SellerNew.png") no-repeat left bottom;
-   background-size: cover; 
+   background-size: cover;
   width: 100% !important;
   height: 660px;
 
@@ -253,14 +253,14 @@ html{
  background: url("/images/BuyerNew.png") no-repeat left bottom;
  width: 100% !important;
   height: 660px;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .financiarBackground{
    background: url("/images/FinanceNew.png") no-repeat left bottom;
    width: 100% !important;
   height: 660px;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .sliderText p{
@@ -292,7 +292,7 @@ html{
   font-weight: bold;
   vertical-align: bottom;
   /* border-left: 1px solid #fff; */
-  
+
 }
 
 
@@ -314,7 +314,7 @@ html{
 
 #testimonials{
   background: url("/images/RxilBackground.png") no-repeat;
-  background-size: cover; 
+  background-size: cover;
   min-height: inherit;
 }
 #newsEvents,#resources{
@@ -352,7 +352,7 @@ html{
 
 #newsEvents .btn:hover {
   background-color:#FF8B00 !important;
-} 
+}
 
 #newsEvents .row{
   justify-content: center;
@@ -415,14 +415,14 @@ html{
   /* padding: 70px 0px 0px; */
   min-height: inherit;
   background: url("/images/ContactUsBackground.png") no-repeat center center;
-  background-size: cover; 
+  background-size: cover;
 
 }
 .copyRightStrip{
   text-align: center;
   padding: 15px 10px;
   background-color:#AFAFAF;
-} 
+}
 
 .copyRightStrip p{
   margin-bottom: 0px;
@@ -435,7 +435,7 @@ html{
   margin-left: 35px;
   display: inline-block;
 
-  
+
 }
 
 #newsEvents .newsEventsHeading p,#promoters .newsEventsHeading p ,#testimonials .testimonialsHeading p{
@@ -443,7 +443,7 @@ html{
   position: relative;
   margin-left: 35px;
   display: inline-block;
-  
+
 }
 
 #newsEvents .newsEventsHeading p:after,#promoters .newsEventsHeading p:after ,#testimonials .testimonialsHeading p:after, #resources .resourcesHeading p:after {
@@ -452,7 +452,7 @@ html{
   position: absolute;
   width: 20px;
   height: 2px;
-  background: #FF8B00;  
+  background: #FF8B00;
   top: 16px;
   left: -25px;
 }
@@ -510,7 +510,7 @@ section{
     margin-top: -60px;
     margin-left: -40px;
     margin-right: 90px;
-} 
+}
 
 
 #testimonials .card-img-top{
@@ -522,12 +522,12 @@ section{
 #testimonials .row{
   justify-content: center;
   display: flex;
-} 
+}
 
 
 #testimonials .col{
   padding-left:70px;
-} 
+}
 
 
 
@@ -538,7 +538,7 @@ section{
 }
 
 #testimonials .card{
-  
+
   text-align: center;
   margin: 0 20px;
   padding: 20px;
@@ -571,7 +571,7 @@ section{
   align-items: center;
   margin: 10vmin;
   overflow: hidden;
-  
+
   /* transform: skew(5deg); */
 }
 .aboutUsSecond .card {
@@ -675,7 +675,7 @@ html {
 }
 
 .aboutUsSecond .card:hover .aboutUsFirst,.aboutUsSecond .card:hover .aboutUsSecondStyle, .aboutUsSecond .card:hover .aboutUsThirdStyle {
-  
+
   background-position: 25px top;
   height: 405px;
 }
@@ -690,7 +690,7 @@ html {
   position: relative;
   background: url("/images/HowItWorks.png") no-repeat center top;
   width: 100%;
-  
+
   height: 320px;
   background-size: contain;
   background-position: 50px 0px;
@@ -698,7 +698,7 @@ html {
 
 
 .aboutUsSecondStyle p{
-  
+
   position: absolute;
   bottom: -140px;
   right: 20px;
@@ -719,7 +719,7 @@ html {
   background-size: contain;
   position: relative;
   background-position: 50px 0px;
-  
+
 }
 
 
@@ -741,7 +741,7 @@ html {
 #whoWeAre{
   /* padding: 0; */
   background-color:#f5f5f5;
-   
+
 }
 
 #whoWeAre .carousel-control-next-icon {
@@ -750,7 +750,7 @@ html {
   width: 86px;
   bottom: 50px;
   position: absolute;
- 
+
 }
 
 #whoWeAre .carousel-control-prev-icon {
@@ -762,11 +762,11 @@ html {
 }
 
 #whoWeAre .carousel-control-prev{
-  
+
  /* transform: rotate(180deg); */
   right: 65% !important;
   left: inherit !important;
-  
+
 }
 
 #whoWeAre .carousel-control-next{
@@ -785,9 +785,9 @@ html {
   width: 20px !important;
   bottom: inherit !important;
   position: static !important;
-  
-  
- 
+
+
+
 }
 
 #whoWeAre .col-md-7 .carousel-control-next{
@@ -816,7 +816,7 @@ html {
   height: 262px;
   margin-left: 62px;
   margin-top: 70px;
- 
+
   background-size: cover;  */
   width: 100%;
   box-shadow: 0px 0px 5px #333;
@@ -879,13 +879,15 @@ html {
     overflow: hidden;
     text-align: center;
     padding-left: 1px;
-    
+    color: #fff !important;
+
 }
 
 .readMore:hover{
   width: 100px;
   border-radius: 15px;
-  
+  color: #fff;
+
 }
 
 
@@ -920,12 +922,12 @@ body .carousel-indicators li{
 
 body .carousel-indicators li.active, body .col-md-7 .carousel-indicators li.active{
   background-color: #FF8B00;
-  
+
 }
 
 body .col-md-7 .carousel-indicators li{
   background-color: #707070;
-  
+
 }
 
 body #whoWeAre .col-md-7 .carousel-inner{
@@ -961,7 +963,7 @@ body #whoWeAre .col-md-7 .carousel-control-prev{
   display: block;
   content: "";
   clear: both;
-  
+
 }
 
 .copyRight{
@@ -978,13 +980,13 @@ body #whoWeAre .col-md-7 .carousel-control-prev{
 .newsLetter{
   position: relative;
   display: inline-block;
-  
+
 }
 
 .newsLetter input{
   border: 1px solid #1C77B0;
   padding: 10px 40px 10px 10px;
-  
+
 }
 
 .newsLetter button{
@@ -998,7 +1000,27 @@ body #whoWeAre .col-md-7 .carousel-control-prev{
   border: none;
   outline: none;
   width: 46px;
-  
+
+}
+
+body #buttonCollaps .card-header {
+  background-color: #278bcb !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  padding:15px !important;
+  width: 700px !important;
+  border: none !important;
+  text-align: left !important;
+  outline: none !important;
+  border-radius: 15px !important;
+  height: 60px !important;
+  font-size: 15px !important;
+  font: bold !important;
+}
+
+body #buttonCollaps .card{
+  border: none;
+  width: 700px;
 }
 
 

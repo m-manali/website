@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -388,21 +389,45 @@ export default function Home() {
           <div class="baseWrapper">
             <p data-content="defaultBackground">
               Seller{" "}
-              <span class="readMore">
-                +<span class="hoverReadmore">Read More</span>
-              </span>{" "}
+              <Link
+                href={{
+                  pathname: "/seLLer",
+                }}
+              >
+                <a>
+                  <span class="readMore">
+                    +<span class="hoverReadmore">Read More</span>
+                  </span>{" "}
+                </a>
+              </Link>
             </p>
             <p data-content="buyerBackground">
               Buyer{" "}
-              <span class="readMore">
-                +<span class="hoverReadmore">Read More</span>
-              </span>
+              <Link
+                href={{
+                  pathname: "/buYer",
+                }}
+              >
+                <a>
+                  <span class="readMore">
+                    +<span class="hoverReadmore">Read More</span>
+                  </span>{" "}
+                </a>
+              </Link>
             </p>
             <p data-content="financiarBackground">
               Financiers{" "}
-              <span class="readMore">
-                +<span class="hoverReadmore">Read More</span>
-              </span>
+              <Link
+                href={{
+                  pathname: "/finanCier",
+                }}
+              >
+                <a>
+                  <span class="readMore">
+                    +<span class="hoverReadmore">Read More</span>
+                  </span>{" "}
+                </a>
+              </Link>
             </p>
           </div>
         </div>

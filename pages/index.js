@@ -902,10 +902,16 @@ if (process.browser) {
       var infinitebottom = infinitetop + $(this).outerHeight();
       if (scrollpos >= infinitetop && scrollpos <= infinitebottom) {
         var sectionId = $(this).attr("id");
+        
+        if (typeof sectionId == "undefined") {
+          $(".header-left.menu a").removeClass("active");
+          console.log("SectionID - " + sectionId);
+          $('.header-left.menu a[data-category="' + sectionId + '"]').addClass(
+            "active"
+          );
+        }
+      } else if (scrollpos == 0) {
         $(".header-left.menu a").removeClass("active");
-        $('.header-left.menu a[data-category="' + sectionId + '"]').addClass(
-          "active"
-        );
       }
     });
   });

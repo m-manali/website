@@ -90,15 +90,17 @@ export default function Home() {
       <section id="intro" className="container theme-widget item active">
         <div className="row" >
           <div id="heroImage">
-            <img src="/images/seller/Group 25629@2x.png" alt="" />
+            <img src="/images/Seller/Group 25629@2x.png" alt="" />
           </div>
         </div>
         <div className="row">
           <span
             className="sellerSpan"
-            style={{ "padding-left": "105px;", "padding-top": "50px" }}
+            style={{ "padding-left": "105px;", "padding-top": "73px" ,"line-height": "1.7" ,"margin-top": "20px",
+            	
+                     "margin-left": "21px"}}
           >
-            <p>
+            <p  style={{ "font-size": "17px"}}>
               If you are small business servicing orders for large corporates
               and are
               <br /> always crunched for working capital, then this is a
@@ -114,12 +116,11 @@ export default function Home() {
               <br />
               <br />
               <br />
-              <br />
-              <br />
+
             </p>
           </span>
-          <span className="sellerSpanright" style={{ "padding-left": "71px;" }}>
-            <img src="/images/seller/Group 25646.png" alt="" />
+          <span className="sellerSpanright" style={{ "padding-left":"77px;" , "padding-top": "43px;" }}>
+            <img src="/images/Seller/Group 25646up.png" alt="" />
           </span>
         </div>
         <br />
@@ -133,11 +134,13 @@ export default function Home() {
             backgroundColor: "#FFFF",
             // paddingLeft: "570px",
             color: "#1C77B0",
+
+
           }}
         >
-          <div className="resourcesHeading">
+          <div className="resourcesHeading" >
             <p>
-              <h2>Seller benefits</h2>
+              <h2 style={{"font-weight": "650"}}>Seller benefits</h2>
             </p>
           </div>
         </div>
@@ -149,42 +152,42 @@ export default function Home() {
       {/* About us section starts here */}
 
       <section className="container theme-widget item active">
-        <div className="heroImageseller1">
+        <div className="heroImageseller1" >
           <div>
             <h5
-              className="text-center partnerWithText"
+              className="text-left partnerWithText"
               style={{
 
                 color: "#1C77B0",
-                // paddingLeft: "180px;",
-                // "font-size": "29px;",
+                "font-weight": "600",
+                "padding-left": "290px"
+                                // "font-size": "29px;",
               }}
             >
-              <strong>
+
                 Patner with us to accelerate your payments and grow your
                 business.
-              </strong>
+
             </h5>
             <br />
             <div className="partnerLine">
             <img
 
-              src="/images/seller/Rectangle 11351.png"
+              src="/images/Seller/Rectangle 11351.png"
               alt=""
 
             />
             </div>
-            <br />
             <br />
             <div style={{ "padding-left": "290px" }}>
               <Button className="buttoncls"
                 data-category="btn:hover"
                 style={{
                   color: "#FFFF",
-                  width: "213px",
-                  height: "50px",
+                  width: "123px",
+                  height: "44px",
                   backgroundColor:"#FF8B00",
-                  borderRadius: "17px !important" ,
+                  "border-radius": "16px" ,
 
                 }}
               >
@@ -194,10 +197,10 @@ export default function Home() {
                 data-category="btn:hover"
                 style={{
                   color: "#FFFF",
-                  width: "213px",
-                  height: "50px",
+                  width: "123px",
+                  height: "44px",
                   backgroundColor:"#FF8B00",
-                  borderRadius: "17px !important",
+                  "border-radius": "16px" ,
                   "margin-left" : "15px",
 
                 }}
@@ -213,7 +216,7 @@ export default function Home() {
 
       {/* Who we are Section Starts here */}
       <section className="container theme-widget item">
-        <div style={{ "margin-top": "-350px" }}>
+        <div style={{ "margin-top": "-372px" }}>
           <div
             id="resources"
             className="text-center"
@@ -225,7 +228,7 @@ export default function Home() {
           >
             <div className="resourcesHeading">
               <p>
-                <h2>FAQ</h2>
+                <h2 style={{"font-weight": "650"}}>FAQ</h2>
               </p>
             </div>
           </div>
@@ -316,12 +319,19 @@ export default function Home() {
             <Card >
               <Card.Header className="collaps">
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                  {/* <img src="/images/seller/faq1.png"></img> */}
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What is the meaning of Lorem Ipsum?
+                <span style={{
+                   "margin-left": "338px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>1</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="0">
+              <Accordion.Collapse eventKey="0" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -334,10 +344,16 @@ export default function Home() {
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 Why is Lorem Ipsum used?
+                <span style={{
+                   "margin-left": "427px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>2</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="1">
+              <Accordion.Collapse eventKey="1" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -350,10 +366,16 @@ export default function Home() {
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What is the most used version?
+                <span style={{
+                   "margin-left": "395px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>3</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="2">
+              <Accordion.Collapse eventKey="2" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -366,10 +388,16 @@ export default function Home() {
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What are the origins of Lorem Ipsum Dolor Sit?
+                <span style={{
+                   "margin-left": "271px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>4</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="3">
+              <Accordion.Collapse eventKey="3" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -382,10 +410,16 @@ export default function Home() {
                 <Accordion.Toggle as={Button} variant="link" eventKey="4">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What is the original text of Lorem Ipsum Dolor Sit Amet?
+                <span style={{
+                   "margin-left": "197px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>5</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="4">
+              <Accordion.Collapse eventKey="4" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -420,7 +454,7 @@ export default function Home() {
       <section
         id="contactUs"
         className="container theme-widget item"
-        style={{ "margin-top": "-320px" }}
+        style={{ "margin-top": "-380px" }}
       >
         <Container>
           <Row>
@@ -704,6 +738,7 @@ export default function Home() {
           width: 100%;
           height: 90%;
           padding-top: 78px !important;
+          margin-bottom: 97px !important;
 
         }
 
@@ -937,6 +972,7 @@ export default function Home() {
           background: #1C77B0;
           top: 16px;
           left: -25px;
+
         }
 
         .sliderText {
@@ -1505,13 +1541,19 @@ export default function Home() {
 
         .sellerSpan {
           text-align: left !important;
-          padding-left: 75px !important;
-          padding-top: 47px !important;
+          padding-left: 83px !important;
+          padding-top: 81px  !important;
+          padding-top: 37px !important;
+          font-weight:600;
+          
+}
         }
         .sellerSpanright {
           text-align: right !important;
           width: 10% !important;
           height: 60% !important;
+          padding-top: 30px !important;
+          padding-left: 40px !important;
         }
         .newsEventsHeadingSeller {
           color: #1c77b0 !important;
@@ -1534,6 +1576,8 @@ export default function Home() {
           margin-left: -59px !important;
           margin-top: -94px !important;
         }
+
+
 
         .partnerWithText{
           font-size:29px;

@@ -73,9 +73,9 @@ export default function Home() {
           </div>
            </div>
            <div className="row">
-           <span className="sellerSpan" style={{"padding-left": "105px;","padding-top":"50px"}}>
+           <span className="sellerSpan" style={{"padding-left": "105px;","padding-top": "73px" ,"line-height": "1.7"}}>
 
-            <p>
+            <p style={{ "font-size": "17px"}}>
 
              Manage your cashflows better while ensuring timely payment to your small
               <br/>business. If you are a corporate house procuring from MSMEs,your team's
@@ -89,7 +89,7 @@ export default function Home() {
                <br/>
             </p>
             </span>
-            <span className="sellerSpanright" style={{"padding-left":"71px;"}}>
+            <span className="sellerSpanright" style={{"padding-left":"77px;" , "padding-top": "43px;"}}>
             <img src="/images/buyer/Group 25597.png" alt="" />
             </span>
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
         >
           <div className="resourcesHeading">
             <p>
-              <h2>Buyers benefits</h2>
+              <h2 style={{"font-weight": "650"}}>Buyers benefits</h2>
             </p>
           </div>
           </div>
@@ -128,17 +128,20 @@ export default function Home() {
         <div className="heroImagesbuyer1">
           <div>
             <h5
-              className="text-center partnerWithText"
+              className="text-left partnerWithText"
               style={{
 
                 color: "#1C77B0",
+                "font-weight": "600",
+                "padding-left": "290px",
+
                 // paddingLeft: "180px;",
                 // "font-size": "29px;",
               }}
             >
-              <strong>
+
                Collaborate with us to manage your finances better.
-              </strong>
+
             </h5>
             <br />
             <div className="partnerLine">
@@ -150,16 +153,16 @@ export default function Home() {
             />
             </div>
             <br />
-            <br />
+
             <div style={{ "padding-left": "290px" }}>
               <Button className="buttoncls"
                 data-category="btn:hover"
                 style={{
                   color: "#FFFF",
-                  width: "213px",
-                  height: "50px",
+                  width: "123px",
+                  height: "44px",
                   backgroundColor:"#FF8B00",
-                  borderRadius: "17px;",
+                  "border-radius": "16px" ,
 
                 }}
               >
@@ -169,11 +172,11 @@ export default function Home() {
                 data-category="btn:hover"
                 style={{
                   color: "#FFFF",
-                  width: "213px",
-                  height: "50px",
+                  width: "123px",
+                  height: "44px",
                   backgroundColor:"#FF8B00",
                   "margin-left" : "15px",
-                  borderRadius: "17px;",
+                  "border-radius": "16px" ,
 
                 }}
               >
@@ -189,8 +192,8 @@ export default function Home() {
 
       {/* Who we are Section Starts here */}
       <section className="container theme-widget item">
-      <div  style={{ "margin-top": "-350px" }}>
-      <div style={{ "margin-top": "-350px" }}>
+      <div  style={{ "margin-top": "-372px" }}>
+
           <div
             id="resources"
             className="text-center"
@@ -202,22 +205,29 @@ export default function Home() {
           >
             <div className="resourcesHeading">
               <p>
-                <h2>FAQ</h2>
+                <h2 style={{"font-weight": "650"}}>FAQ</h2>
               </p>
             </div>
           </div>
         </div>
         <div className="rowseller">
-        <Accordion defaultActiveKey="0" id="buttonCollaps" style={{"margin-left": "120px","margin-top": "-30px"}}>"
+        <Accordion defaultActiveKey="0" id="buttonCollaps" style={{"margin-left": "156px","margin-top": "-30px"}}>"
             <Card >
               <Card.Header className="collaps">
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                  {/* <img src="/images/seller/faq1.png"></img> */}
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What is the meaning of Lorem Ipsum?
+                <span style={{
+                   "margin-left": "338px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>1</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="0">
+              <Accordion.Collapse eventKey="0" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -230,10 +240,16 @@ export default function Home() {
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 Why is Lorem Ipsum used?
+                <span style={{
+                   "margin-left": "427px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>2</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="1">
+              <Accordion.Collapse eventKey="1" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -246,10 +262,16 @@ export default function Home() {
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What is the most used version?
+                <span style={{
+                   "margin-left": "395px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>3</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="2">
+              <Accordion.Collapse eventKey="2" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -262,10 +284,16 @@ export default function Home() {
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What are the origins of Lorem Ipsum Dolor Sit?
+                <span style={{
+                   "margin-left": "271px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>4</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="3">
+              <Accordion.Collapse eventKey="3" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -278,10 +306,16 @@ export default function Home() {
                 <Accordion.Toggle as={Button} variant="link" eventKey="4">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What is the original text of Lorem Ipsum Dolor Sit Amet?
+                <span style={{
+                   "margin-left": "197px",
+                   "font-size": "17px",
+                   "margin-top": "-25px",
+                   "font-weight": "900",
+                }}>5</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="4">
+              <Accordion.Collapse eventKey="4" className="border" style={{"border-radius": "19px",}}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -289,10 +323,9 @@ export default function Home() {
               </Accordion.Collapse>
             </Card>
           </Accordion>
-        </div>
-        </div>
+</div>
+</section>
 
-      </section>
       {/* Testimonials Section Ends Here */}
 
 
@@ -321,7 +354,7 @@ export default function Home() {
 
       {/* Contact Us Section Starts Here */}
 
-      <section id="contactUs" className="container theme-widget item" style={{ "margin-top": "-320px" }}>
+      <section id="contactUs" className="container theme-widget item" style={{ "margin-top": "-380px" }}>
         <Container>
           <Row>
             <Col>
@@ -1405,13 +1438,18 @@ export default function Home() {
 
         .sellerSpan {
           text-align: left !important;
-          padding-left: 75px !important;
-          padding-top: 47px !important;
+          padding-left: 83px !important;
+          padding-top: 37px !important;
+          font-weight:600;
+
+
         }
         .sellerSpanright {
           text-align: right !important;
           width: 10% !important;
           height: 60% !important;
+          padding-top: 43px;
+          padding-left: 77px;
         }
         .newsEventsHeadingSeller {
           color: #1c77b0 !important;

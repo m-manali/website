@@ -147,7 +147,7 @@ export default function Home() {
             <div className="partnerLine">
             <img
 
-              src="./images/Seller/Rectangle 11351.png"
+              src="./images/seller/Rectangle 11351.png"
               alt=""
 
             />

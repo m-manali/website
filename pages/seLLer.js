@@ -90,7 +90,7 @@ export default function Home() {
       <section id="intro" className="container theme-widget item active">
         <div className="row" >
           <div id="heroImage">
-            <img src="/images/Seller/Group 25629@2x.png" alt="" />
+            <img src="/images/seller/Group 25629@2x.png" alt="" />
           </div>
         </div>
         <div className="row">
@@ -120,7 +120,7 @@ export default function Home() {
             </p>
           </span>
           <span className="sellerSpanright" style={{ "padding-left":"77px;" , "padding-top": "43px;" }}>
-            <img src="/images/Seller/Group 25646up.png" alt="" />
+            <img src="/images/seller/Group 25646up.png" alt="" />
           </span>
         </div>
         <br />
@@ -173,7 +173,7 @@ export default function Home() {
             <div className="partnerLine">
             <img
 
-              src="/images/Seller/Rectangle 11351.png"
+              src="/images/seller/Rectangle 11351.png"
               alt=""
 
             />

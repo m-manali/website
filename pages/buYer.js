@@ -77,6 +77,7 @@ export default function Home() {
 
             <p style={{ "font-size": "17px"}}>
 
+
              Manage your cashflows better while ensuring timely payment to your small
               <br/>business. If you are a corporate house procuring from MSMEs,your team's
               <br/>bandwidth would often be tied up with handling payment follow-ups and
@@ -147,7 +148,7 @@ export default function Home() {
             <div className="partnerLine">
             <img
 
-              src="./images/seller/Rectangle 11351.png"
+              src="./images/Seller/Rectangle 11351.png"
               alt=""
 
             />
@@ -203,27 +204,25 @@ export default function Home() {
               color: "#1C77B0",
             }}
           >
+<br/>
+            <br/>
             <div className="resourcesHeading">
               <p>
+
                 <h2 style={{"font-weight": "650"}}>FAQ</h2>
               </p>
             </div>
           </div>
         </div>
         <div className="rowseller">
-        <Accordion defaultActiveKey="0" id="buttonCollaps" style={{"margin-left": "156px","margin-top": "-30px"}}>"
+        <Accordion defaultActiveKey="0" id="buttonCollaps" style={{"margin-left": "156px","margin-top": "-30px"}}>
             <Card >
               <Card.Header className="collaps">
-                <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                <Accordion.Toggle as={Button} variant="" eventKey="0">
                   {/* <img src="/images/seller/faq1.png"></img> */}
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What is the meaning of Lorem Ipsum?
-                <span style={{
-                   "margin-left": "338px",
-                   "font-size": "17px",
-                   "margin-top": "-25px",
-                   "font-weight": "900",
-                }}>1</span>
+                <span className="sellerNumber">1</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
@@ -237,15 +236,10 @@ export default function Home() {
             <br/>
             <Card >
               <Card.Header className="collaps">
-                <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                <Accordion.Toggle as={Button} variant="" eventKey="1">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 Why is Lorem Ipsum used?
-                <span style={{
-                   "margin-left": "427px",
-                   "font-size": "17px",
-                   "margin-top": "-25px",
-                   "font-weight": "900",
-                }}>2</span>
+                <span className="sellerNumber">2</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
@@ -259,15 +253,10 @@ export default function Home() {
             <br/>
             <Card >
               <Card.Header className="collaps">
-                <Accordion.Toggle as={Button} variant="link" eventKey="2">
+                <Accordion.Toggle as={Button} variant="" eventKey="2">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What is the most used version?
-                <span style={{
-                   "margin-left": "395px",
-                   "font-size": "17px",
-                   "margin-top": "-25px",
-                   "font-weight": "900",
-                }}>3</span>
+                <span className="sellerNumber">3</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
@@ -281,15 +270,10 @@ export default function Home() {
             <br/>
             <Card >
               <Card.Header className="collaps">
-                <Accordion.Toggle as={Button} variant="link" eventKey="3">
+                <Accordion.Toggle as={Button} variant="" eventKey="3">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What are the origins of Lorem Ipsum Dolor Sit?
-                <span style={{
-                   "margin-left": "271px",
-                   "font-size": "17px",
-                   "margin-top": "-25px",
-                   "font-weight": "900",
-                }}>4</span>
+                <span className="sellerNumber">4</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
@@ -303,15 +287,10 @@ export default function Home() {
             <br/>
             <Card >
               <Card.Header className="collaps">
-                <Accordion.Toggle as={Button} variant="link" eventKey="4">
+                <Accordion.Toggle as={Button} variant="" eventKey="4">
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
                 What is the original text of Lorem Ipsum Dolor Sit Amet?
-                <span style={{
-                   "margin-left": "197px",
-                   "font-size": "17px",
-                   "margin-top": "-25px",
-                   "font-weight": "900",
-                }}>5</span>
+                <span className="sellerNumber">5</span>
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
@@ -354,7 +333,7 @@ export default function Home() {
 
       {/* Contact Us Section Starts Here */}
 
-      <section id="contactUs" className="container theme-widget item" style={{ "margin-top": "-380px" }}>
+      <section id="contactUs" className="container theme-widget item" style={{ "margin-top": "-320px" }}>
         <Container>
           <Row>
             <Col>
@@ -1478,7 +1457,22 @@ export default function Home() {
         }
         .partnerLine{
           padding-left:296px;
+        } 
+
+        .sellerNumber{
+          position: absolute;
+          right: 10px;
+          bottom: 0px;
+          display: block;
+          line-height: 43px;
+          color: rgb(157, 206, 238);
+          font-size: 43px
         }
+
+        .collaps.card-header{
+          position: relative
+        }  
+
       `}</style>
     </div>
   );

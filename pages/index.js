@@ -900,10 +900,11 @@ if (process.browser) {
     $("section.item").each(function () {
       var infinitetop = $(this).offset().top - $(window).height();
       var infinitebottom = infinitetop + $(this).outerHeight();
+      console.log("outside if");
       if (scrollpos >= infinitetop && scrollpos <= infinitebottom) {
         var sectionId = $(this).attr("id");
-        
-        if (typeof sectionId == "undefined") {
+        console.log("inside first if");
+        if (typeof sectionId != "undefined") {
           $(".header-left.menu a").removeClass("active");
           console.log("SectionID - " + sectionId);
           $('.header-left.menu a[data-category="' + sectionId + '"]').addClass(

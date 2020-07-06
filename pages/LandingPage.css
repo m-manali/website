@@ -1023,6 +1023,7 @@ body #buttonCollaps .card-header {
   height: 55px !important;
   font-size: 19px !important;
   font: bold !important;
+  position: relative;
 }
 
 body #buttonCollaps .card{

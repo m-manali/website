@@ -12,173 +12,171 @@ import Carousel from "react-bootstrap/Carousel";
 export default function Home() {
   return (
     <div>
-    <Head>
-      <title>Receivables Exchange of India Ltd :</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+      <Head>
+        <title>Receivables Exchange of India Ltd :</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-    {/* Header Secrtion Starts here*/}
+      {/* Header Secrtion Starts here*/}
 
-    <div className="header stickHeader">
-      <div className="container">
-        <a href="#default" className="logo">
-          <img
-            src="/images/RxilIconBlue.png"
-            alt=""
-            width="150"
-            height="50"
-          />
-        </a>
-        <div className="header-left menu">
-          <a href="#" data-category="aboutUs">
-            TReDS
+      <div className="header stickHeader">
+        <div className="container">
+          <a href="#default" className="logo">
+            <img
+              src="/images/RxilIconBlue.png"
+              alt=""
+              width="150"
+              height="50"
+            />
           </a>
-          <a href="#" data-category="whoWeAre">
-            About Us
-          </a>
-          <a href="#" data-category="benefits">
-            Benefits
-          </a>
-          <a href="#" data-category="newsEvents">
-            News & Events
-          </a>
-          <a href="#" data-category="resources">
-            Resources
-          </a>
-          <a href="#" data-category="contactUs">
-            Contact Us
-          </a>
-        </div>
-        <div className="login-strip">
-          <a href="https://www.treds.in/rest/login" target="_blank">
-            Login
-          </a>
-          <a
-            className="register-btn"
-            href="https://onboarding.rxil.in/customerapp/home"
-            target="_blank"
-          >
-            Register
-          </a>
+          <div className="header-left menu">
+            <a href="#" data-category="aboutUs">
+              TReDS
+            </a>
+            <a href="#" data-category="whoWeAre">
+              About Us
+            </a>
+            <a href="#" data-category="benefits">
+              Benefits
+            </a>
+            <a href="#" data-category="newsEvents">
+              News & Events
+            </a>
+            <a href="#" data-category="resources">
+              Resources
+            </a>
+            <a href="#" data-category="contactUs">
+              Contact Us
+            </a>
+          </div>
+          <div className="login-strip">
+            <a href="https://www.treds.in/rest/login" target="_blank">
+              Login
+            </a>
+            <a
+              className="register-btn"
+              href="https://onboarding.rxil.in/customerapp/home"
+              target="_blank"
+            >
+              Register
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    {/* Header Secrtion Ends here*/}
+      {/* Header Secrtion Ends here*/}
 
       {/* Hero Banner Secrtion Starts here*/}
       <section id="intro" className="container theme-widget item active">
-        <div className="row">
+        <div className="">
           <div id="heroImage">
             <img src="/images/buyer/buyerhero.png" alt="" />
           </div>
-           </div>
-           <div className="row">
-           <span className="sellerSpan" style={{"padding-left": "105px;","padding-top": "73px" ,"line-height": "1.7"}}>
-
-            <p style={{ "font-size": "17px"}}>
-
-
-             Manage your cashflows better while ensuring timely payment to your small
-              <br/>business. If you are a corporate house procuring from MSMEs,your team's
-              <br/>bandwidth would often be tied up with handling payment follow-ups and
-              <br/>invoice status queries from supliers.
-              <br/>
-              <br/>Through RXIL TReDS,you can you're your team's bandwidth and ensure that
-              <br/>all your MSMEvendors have access to a line of capital to receive early
-              <br/>payments against their invoices.
-               <br/>
-               <br/>
+        </div>
+        <div className="pagePadding introPadding">
+          <div className="sellerSpan">
+            <p style={{ "font-size": "17px" }}>
+              Manage your cashflows better while ensuring timely payment to your
+              small business. If you are a corporate house procuring from MSMEs,your
+              team's
+              
+              bandwidth would often be tied up with handling payment follow-ups
+              and
+              
+              invoice status queries from supliers.
+              <br />
+              <br />
+              Through RXIL TReDS,you can you're your team's bandwidth and ensure
+              that
+             
+              all your MSMEvendors have access to a line of capital to receive
+              early
+              
+              payments against their invoices.
+              <br />
+              <br />
             </p>
-            </span>
-            <span className="sellerSpanright" style={{"padding-left":"77px;" , "padding-top": "43px;"}}>
-            <img src="/images/buyer/Group 25597.png" alt="" />
-            </span>
           </div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
           <div
+            className="sellerSpanright"
+            style={{ "padding-left": "77px;", "padding-top": "43px;" }}
+          >
+            <img src="/images/buyer/Group 25597.png" alt="" />
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+      </section>
+      {/* Hero Secrtion Starts here*/}
+
+      <section className="container theme-widget item heroImagebuyer">
+        <div
           id="resources"
           className="text-center"
           style={{
             backgroundColor: "#FFFF",
             // paddingLeft: "570px",
             color: "#1C77B0",
+            marginBottom:"25px",
           }}
         >
           <div className="resourcesHeading">
             <p>
-              <h2 style={{"font-weight": "650"}}>Buyers benefits</h2>
+              <h2 style={{ "font-weight": "650" }}>Buyers benefits</h2>
             </p>
           </div>
-          </div>
-
-
-      </section>
-      {/* Hero Secrtion Starts here*/}
-
-      <section className="container theme-widget item heroImagebuyer">
-
-
+        </div>
+        <img src="/images/buyer/Group 25667.png"></img>
       </section>
 
       {/* About us section starts here */}
 
-      <section className="container theme-widget item active">
+      <section className="container theme-widget item active partnerWithUs">
         <div className="heroImagesbuyer1">
-          <div>
+          <div className="partnerGroup">
             <h5
               className="text-left partnerWithText"
               style={{
-
                 color: "#1C77B0",
                 "font-weight": "600",
-                "padding-left": "290px",
-
-                // paddingLeft: "180px;",
-                // "font-size": "29px;",
               }}
             >
-
-               Collaborate with us to manage your finances better.
-
+              Collaborate with us to manage your finances better.
             </h5>
             <br />
             <div className="partnerLine">
-            <img
-
-              src="./images/seller/Rectangle 11351.png"
-              alt=""
-
-            />
+              <img src="./images/seller/Rectangle 11351.png" alt="" />
             </div>
             <br />
 
-            <div style={{ "padding-left": "290px" }}>
-              <Button className="buttoncls"
+            <div>
+              <Button
+                className="buttoncls"
                 data-category="btn:hover"
                 style={{
                   color: "#FFFF",
                   width: "123px",
                   height: "44px",
-                  backgroundColor:"#FF8B00",
-                  "border-radius": "16px" ,
-
+                  backgroundColor: "#FF8B00",
+                  "border-radius": "16px",
+                  border: "none",
+                  boxShadow: "2px 2px 5px #999",
                 }}
               >
                 <strong>Registration</strong>
               </Button>
-              <Button  className="buttoncls"
+              <Button
+                className="buttoncls"
                 data-category="btn:hover"
                 style={{
                   color: "#FFFF",
                   width: "123px",
                   height: "44px",
-                  backgroundColor:"#FF8B00",
-                  "margin-left" : "15px",
-                  "border-radius": "16px" ,
-
+                  backgroundColor: "#FF8B00",
+                  "margin-left": "15px",
+                  "border-radius": "16px",
+                  border: "none",
+                  boxShadow: "2px 2px 5px #999",
                 }}
               >
                 <strong>Contact Us</strong>
@@ -188,13 +186,11 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* About us section ends here */}
 
       {/* Who we are Section Starts here */}
-      <section className="container theme-widget item">
-      <div  style={{ "margin-top": "-372px" }}>
-
+      <section className="container theme-widget item faqSection">
+        <div>
           <div
             id="resources"
             className="text-center"
@@ -204,126 +200,154 @@ export default function Home() {
               color: "#1C77B0",
             }}
           >
-<br/>
-            <br/>
+            <br />
+            <br />
             <div className="resourcesHeading">
               <p>
-
-                <h2 style={{"font-weight": "650"}}>FAQ</h2>
+                <h2 style={{ "font-weight": "650" }}>FAQ</h2>
               </p>
             </div>
           </div>
         </div>
         <div className="rowseller">
-        <Accordion defaultActiveKey="0" id="buttonCollaps" style={{"margin-left": "156px","margin-top": "-30px"}}>
-            <Card >
-              <Card.Header className="collaps">
+          <Accordion defaultActiveKey="0" id="buttonCollaps">
+            <Card>
+              <Card.Header className="collaps open">
                 <Accordion.Toggle as={Button} variant="" eventKey="0">
                   {/* <img src="/images/seller/faq1.png"></img> */}
-                <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
-                What is the meaning of Lorem Ipsum?
-                <span className="sellerNumber">1</span>
-              </strong>
+                  <strong style={{ "font-size": "19px;", color: "#FFFF" }}>
+                    What is the meaning of Lorem Ipsum?
+                    <span className="sellerNumber">1</span>
+                  </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="0" className="border" style={{"border-radius": "19px",}}>
-                <Card.Body > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.</Card.Body>
+              <Accordion.Collapse
+                eventKey="0"
+                className="border"
+                style={{ "border-radius": " 0px 0px 19px 19px" }}
+              >
+                <Card.Body>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <br/>
-            <Card >
+            <br />
+            <Card>
               <Card.Header className="collaps">
                 <Accordion.Toggle as={Button} variant="" eventKey="1">
-                <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
-                Why is Lorem Ipsum used?
-                <span className="sellerNumber">2</span>
-              </strong>
+                  <strong style={{ "font-size": "19px;", color: "#FFFF" }}>
+                    Why is Lorem Ipsum used?
+                    <span className="sellerNumber">2</span>
+                  </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="1" className="border" style={{"border-radius": "19px",}}>
-                <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.</Card.Body>
+              <Accordion.Collapse
+                eventKey="1"
+                className="border"
+                style={{ "border-radius": " 0px 0px 19px 19px" }}
+              >
+                <Card.Body>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <br/>
-            <Card >
+            <br />
+            <Card>
               <Card.Header className="collaps">
                 <Accordion.Toggle as={Button} variant="" eventKey="2">
-                <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
-                What is the most used version?
-                <span className="sellerNumber">3</span>
-              </strong>
+                  <strong style={{ "font-size": "19px;", color: "#FFFF" }}>
+                    What is the most used version?
+                    <span className="sellerNumber">3</span>
+                  </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="2" className="border" style={{"border-radius": "19px",}}>
-                <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.</Card.Body>
+              <Accordion.Collapse
+                eventKey="2"
+                className="border"
+                style={{ "border-radius": " 0px 0px 19px 19px" }}
+              >
+                <Card.Body>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <br/>
-            <Card >
+            <br />
+            <Card>
               <Card.Header className="collaps">
                 <Accordion.Toggle as={Button} variant="" eventKey="3">
-                <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
-                What are the origins of Lorem Ipsum Dolor Sit?
-                <span className="sellerNumber">4</span>
-              </strong>
+                  <strong style={{ "font-size": "19px;", color: "#FFFF" }}>
+                    What are the origins of Lorem Ipsum Dolor Sit?
+                    <span className="sellerNumber">4</span>
+                  </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="3" className="border" style={{"border-radius": "19px",}}>
-                <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.</Card.Body>
+              <Accordion.Collapse
+                eventKey="3"
+                className="border"
+                style={{ "border-radius": " 0px 0px 19px 19px" }}
+              >
+                <Card.Body>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <br/>
-            <Card >
+            <br />
+            <Card>
               <Card.Header className="collaps">
                 <Accordion.Toggle as={Button} variant="" eventKey="4">
-                <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
-                What is the original text of Lorem Ipsum Dolor Sit Amet?
-                <span className="sellerNumber">5</span>
-              </strong>
+                  <strong style={{ "font-size": "19px;", color: "#FFFF" }}>
+                    What is the original text of Lorem Ipsum Dolor Sit Amet?
+                    <span className="sellerNumber">5</span>
+                  </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="4" className="border" style={{"border-radius": "19px",}}>
-                <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.</Card.Body>
+              <Accordion.Collapse
+                eventKey="4"
+                className="border"
+                style={{ "border-radius": " 0px 0px 19px 19px" }}
+              >
+                <Card.Body>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </Card.Body>
               </Accordion.Collapse>
             </Card>
           </Accordion>
-</div>
-</section>
+        </div>
+      </section>
 
       {/* Testimonials Section Ends Here */}
-
 
       {/* Who we are section ENds here */}
 
       {/* Benefit Section starts here */}
 
-
       {/* Benefit Section ends here */}
 
       {/* News and Events Starts Here */}
 
-
-
       {/* News and Events Ends Here */}
 
       {/* Resources Section starts here */}
-
-
 
       {/* Resources Section ends here */}
 
@@ -333,7 +357,7 @@ export default function Home() {
 
       {/* Contact Us Section Starts Here */}
 
-      <section id="contactUs" className="container theme-widget item" style={{ "margin-top": "-320px" }}>
+      <section id="contactUs" className="container theme-widget item">
         <Container>
           <Row>
             <Col>
@@ -570,7 +594,13 @@ export default function Home() {
 
         #intro {
           min-height: inherit;
-          padding: 0px;
+          padding: 0px !important;
+        }
+
+        #intro:after{
+          display:block;
+          content:"";
+          clear:both;
         }
 
         #intro .rhs-content {
@@ -616,6 +646,7 @@ export default function Home() {
           width: 100%;
           height: 90%;
           padding-top: 78px !important;
+          margin-bottom: 97px !important;
 
         }
 
@@ -1319,11 +1350,14 @@ export default function Home() {
           height: 795px !important;
         }
         .heroImagebuyer {
-          background: url("/images/buyer/Group 25667.png") no-repeat center
-            bottom !important;
-          background-size: cover !important;
-          height: 795px !important;
+          
+          padding:0px !important;
         }
+	
+	 .heroImagebuyer img{
+          width:100%;
+        }
+	
         .heroImagefinancier {
           background: url("/images/financier/Group 25671.png") no-repeat center
             bottom !important;
@@ -1352,12 +1386,10 @@ export default function Home() {
         }
         .heroImagesbuyer1 {
           background: url("/images/buyer/modifiedfinancier.png") no-repeat !important;
-          background-size: cover !important;
-          height: 440px !important;
-          margin-top: -166px !important;
+          background-size: contain !important;
+          height: 392px !important;
+           margin-top: -166px !important;
           padding-top: 138px !important;
-          margin-left: -49px !important;
-          margin-right: -49px !important;
         }
         .buttonseller {
           background-color: #ff8b00 !important;
@@ -1410,25 +1442,24 @@ export default function Home() {
           height: 90% !important;
         }
         .rowseller {
-          margin-left: 233px !important;
-          margin-right: -50px !important;
-          margin-top: 50px !important;
+          width:700px;
+          margin:0 auto;
         }
 
         .sellerSpan {
-          text-align: left !important;
-          padding-left: 83px !important;
-          padding-top: 37px !important;
-          font-weight:600;
+         
+          float:left;
+          width:50%          
 
 
         }
         .sellerSpanright {
-          text-align: right !important;
-          width: 10% !important;
-          height: 60% !important;
-          padding-top: 43px;
-          padding-left: 77px;
+          float:left;
+          width:50%
+        }
+
+        .sellerSpanright img{
+          width:100%;
         }
         .newsEventsHeadingSeller {
           color: #1c77b0 !important;
@@ -1455,9 +1486,7 @@ export default function Home() {
         .partnerWithText{
           font-size:29px;
         }
-        .partnerLine{
-          padding-left:296px;
-        } 
+        
 
         .sellerNumber{
           position: absolute;
@@ -1472,6 +1501,28 @@ export default function Home() {
         .collaps.card-header{
           position: relative
         }  
+
+        .pagePadding, .row.pagePadding{
+          padding-left:10%;
+          padding-right:10%;
+        }
+
+        .introPadding{
+          padding-top:100px;
+        }
+
+        .partnerWithUs{
+          padding:68px 0px 30px !important;
+          min-height:auto !important;
+        }
+
+        .partnerGroup{
+          padding-left:12%;
+        }
+
+        .faqSection{
+          padding-top:0px !important;
+        }
 
       `}</style>
     </div>
@@ -1497,10 +1548,12 @@ if (process.browser) {
   $(document).on("click", ".menu a", function () {
     console.log("inside menu click");
     var getattr = $(this).attr("data-category");
-    if(getattr == 'aboutUs'){
-     var targetscroll = $("#" + getattr).offset().top - ($('.header').outerHeight() - 90);// - 70;
-    }else{
-      var targetscroll = $("#" + getattr).offset().top - ($('.header').outerHeight() - 70);// - 70;
+    if (getattr == "aboutUs") {
+      var targetscroll =
+        $("#" + getattr).offset().top - ($(".header").outerHeight() - 90); // - 70;
+    } else {
+      var targetscroll =
+        $("#" + getattr).offset().top - ($(".header").outerHeight() - 70); // - 70;
     }
 
     $("html, body").animate({
@@ -1553,14 +1606,14 @@ if (process.browser) {
     });
   });
 
-  $(document).ready(function(){
-    $('body').css("padding-top",$('.header').outerHeight());
+  $(document).ready(function () {
+    $("body").css("padding-top", $(".header").outerHeight());
   });
   var coll = document.getElementsByClassName("collapsible");
   var i;
 
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
       this.classNameList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.display === "block") {
@@ -1570,5 +1623,4 @@ if (process.browser) {
       }
     });
   }
-
 }

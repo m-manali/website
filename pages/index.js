@@ -927,5 +927,16 @@ if (process.browser) {
       "height",
       $("section#intro").outerHeight() - $(".header").outerHeight()
     );
+
+    $(document).on('click','.card-header',function(){
+      
+      if(!$(this).hasClass('open')){
+          $('.collaps.card-header').removeClass('open');
+          $(this).addClass('open');
+      }
+      else{
+          $('.collaps.card-header').removeClass('open');
+      }
+  })
   });
 }

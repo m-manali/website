@@ -69,16 +69,13 @@ export default function Home() {
 
       {/* Hero Banner Secrtion Starts here*/}
       <section id="intro" className="container theme-widget item active">
-        <div className="row">
+        <div className="">
           <div id="heroImage">
             <img src="/images/financier/Group 25670.png" alt="" />
           </div>
            </div>
-           <div className="row">
-           <span className="sellerSpan" style={{"padding-left": "105px;","padding-top": "73px" ,"line-height": "1.7" ,
-         "margin-top": "20px",
-         "margin-left": "21px",
-              }}>
+           <div className="pagePadding introPadding">
+           <div className="sellerSpan" >
 
             <p style={{ "font-size": "17px"}}>
 
@@ -92,10 +89,10 @@ export default function Home() {
               <br/>
 
             </p>
-            </span>
-            <span className="sellerSpanright"  style={{"padding-left":"77px;" , "padding-top": "43px;"}}>
+            </div>
+            <div className="sellerSpanright"  style={{"padding-left":"77px;" , "padding-top": "43px;"}}>
             <img src="/images/financier/Group 25597.png" alt="" />
-            </span>
+            </div>
           </div>
           <br/>
           <br/>
@@ -103,13 +100,19 @@ export default function Home() {
           <br/>
           <br/>
 
-          <div
+          
+      </section>
+      {/* Hero Secrtion Starts here*/}
+
+      <section className="container theme-widget item heroImagefinancier">
+	<div
           id="resources"
           className="text-center"
           style={{
             backgroundColor: "#FFFF",
             // paddingLeft: "570px",
             color: "#1C77B0",
+            marginBottom:"25px",
           }}
         >
           <div className="resourcesHeading">
@@ -118,28 +121,24 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
-      {/* Hero Secrtion Starts here*/}
-
-      <section className="container theme-widget item heroImagefinancier">
-
+	
+	<img src="/images/financier/Group 25671.png"/>
+	
 
       </section>
 
       {/* About us section starts here */}
 
-      <section className="container theme-widget item active">
+      <section className="container theme-widget item active partnerWithUs">
         <div className="heroImagesfinancier1">
-          <div>
+          <div className="partnerGroup">
             <h5
               className="text-left partnerWithText"
               style={{
 
                 color: "#1C77B0",
                 "font-weight": "600",
-                "padding-left": "290px",
-
-                // paddingLeft: "180px;",
+               
                 // "font-size": "29px;",
               }}
             >
@@ -158,7 +157,7 @@ export default function Home() {
             </div>
             <br />
 
-            <div style={{ "padding-left": "290px" }}>
+            <div >
               <Button className="buttoncls"
                 data-category="btn:hover"
                 style={{
@@ -167,6 +166,8 @@ export default function Home() {
                   height: "44px",
                   backgroundColor:"#FF8B00",
                   "border-radius": "16px" ,
+		  border:"none",
+                  boxShadow:"2px 2px 5px #999",
 
                 }}
               >
@@ -181,6 +182,8 @@ export default function Home() {
                   backgroundColor:"#FF8B00",
                   "margin-left" : "15px",
                   "border-radius": "16px",
+		   border:"none",
+                  boxShadow:"2px 2px 5px #999",
 
                 }}
               >
@@ -197,8 +200,8 @@ export default function Home() {
       {/* About us section ends here */}
 
       {/* Who we are Section Starts here */}
-      <section className="container theme-widget item">
-      <div  style={{ "margin-top": "-372px" }}>
+      <section className="container theme-widget item faqSection">
+      <div>
 
           <div
             id="resources"
@@ -219,9 +222,9 @@ export default function Home() {
           </div>
         </div>
         <div className="rowseller">
-        <Accordion defaultActiveKey="0" id="buttonCollaps" style={{"margin-left": "156px","margin-top": "-30px"}}>
+        <Accordion defaultActiveKey="0" id="buttonCollaps" >
             <Card >
-              <Card.Header className="collaps">
+              <Card.Header className="collaps open">
                 <Accordion.Toggle as={Button} variant="" eventKey="0">
                   {/* <img src="/images/seller/faq1.png"></img> */}
                 <strong style={{ "font-size": "19px;",color:"#FFFF" }}>
@@ -230,7 +233,7 @@ export default function Home() {
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="0" className="border" style={{"border-radius": "19px",}}>
+              <Accordion.Collapse eventKey="0" className="border"  style={{ "border-radius": " 0px 0px 19px 19px" }}>
                 <Card.Body > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -247,7 +250,7 @@ export default function Home() {
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="1" className="border" style={{"border-radius": "19px",}}>
+              <Accordion.Collapse eventKey="1" className="border"  style={{ "border-radius": " 0px 0px 19px 19px" }}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -264,7 +267,7 @@ export default function Home() {
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="2" className="border" style={{"border-radius": "19px",}}>
+              <Accordion.Collapse eventKey="2" className="border"  style={{ "border-radius": " 0px 0px 19px 19px" }}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -281,7 +284,7 @@ export default function Home() {
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="3" className="border" style={{"border-radius": "19px",}}>
+              <Accordion.Collapse eventKey="3" className="border"  style={{ "border-radius": " 0px 0px 19px 19px" }}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -298,7 +301,7 @@ export default function Home() {
               </strong>
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="4" className="border" style={{"border-radius": "19px",}}>
+              <Accordion.Collapse eventKey="4" className="border"  style={{ "border-radius": " 0px 0px 19px 19px" }}>
                 <Card.Body> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -337,7 +340,7 @@ export default function Home() {
       {/*  Promotors Section ends here*/}
   {/* Contact Us Section Starts Here */}
 
-  <section id="contactUs" className="container theme-widget item" style={{ "margin-top": "-320px" }}>
+  <section id="contactUs" className="container theme-widget item">
         <Container>
           <Row>
             <Col>
@@ -574,7 +577,13 @@ export default function Home() {
 
         #intro {
           min-height: inherit;
-          padding: 0px;
+          padding: 0px !important;
+        }
+
+        #intro:after{
+          display:block;
+          content:"";
+          clear:both;
         }
 
         #intro .rhs-content {
@@ -620,6 +629,7 @@ export default function Home() {
           width: 100%;
           height: 90%;
           padding-top: 78px !important;
+          margin-bottom: 97px !important;
 
         }
 
@@ -1329,11 +1339,14 @@ export default function Home() {
           height: 795px !important;
         }
         .heroImagefinancier {
-          background: url("/images/financier/Group 25671.png") no-repeat center
-            bottom !important;
-          background-size: cover !important;
-          height: 795px !important;
+         
+           padding:0px !important;
         }
+	
+	.heroImagefinancier img{
+          width:100%;
+        }
+	
         .heroImageaboutusmain {
           background: url("/images/aboutUs/aboutmain.png") no-repeat !important;
           background-size: cover !important;
@@ -1372,12 +1385,12 @@ export default function Home() {
 
         .heroImagesfinancier1 {
           background: url("/images/financier/Group 25667modified.png") no-repeat !important;
-          background-size: cover !important;
-          height: 440px !important;
+          background-size: contain !important;
+          height: 392px !important;
+         
+         
           margin-top: -166px !important;
           padding-top: 138px !important;
-          margin-left: -49px !important;
-          margin-right: -49px !important;
         }
         body #buttonCollaps .card-header {
           background-color: #278bcb !important;
@@ -1414,24 +1427,24 @@ export default function Home() {
           height: 90% !important;
         }
         .rowseller {
-          margin-left: 233px !important;
-          margin-right: -50px !important;
-          margin-top: 50px !important;
+          width:700px;
+          margin:0 auto;
         }
 
         .sellerSpan {
-          text-align: left !important;
-          padding-left: 83px !important;
-          padding-top: 37px !important;
-          font-weight:600;
+         
+          float:left;
+          width:50%          
+
 
         }
         .sellerSpanright {
-          text-align: right !important;
-          width: 10% !important;
-          height: 60% !important;
-          padding-top: 43px;
-          padding-left: 77px;
+          float:left;
+          width:50%
+        }
+
+        .sellerSpanright img{
+          width:100%;
         }
         .newsEventsHeadingSeller {
           color: #1c77b0 !important;
@@ -1458,10 +1471,7 @@ export default function Home() {
         .partnerWithText{
           font-size:29px;
         }
-        .partnerLine{
-          padding-left:296px;
-        }
-
+        
         .sellerNumber{
           position: absolute;
           right: 10px;
@@ -1475,6 +1485,28 @@ export default function Home() {
         .collaps.card-header{
           position: relative
         }  
+
+        .pagePadding, .row.pagePadding{
+          padding-left:10%;
+          padding-right:10%;
+        }
+
+        .introPadding{
+          padding-top:100px;
+        }
+
+        .partnerWithUs{
+          padding:68px 0px 30px !important;
+          min-height:auto !important;
+        }
+
+        .partnerGroup{
+          padding-left:12%;
+        }
+
+        .faqSection{
+          padding-top:0px !important;
+        }
 
       `}</style>
     </div>

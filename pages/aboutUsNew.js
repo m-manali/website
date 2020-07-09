@@ -220,7 +220,7 @@ export default function Home() {
           </p>
         </div>
         <div className="pagePadding introPadding">
-          <div className="sellerSpan" style={{ padding: "40px 20px 0px" }}>
+          <div className="sellerSpan" style={{ padding: "15px 20px 0px" }}>
             <img src="/images/aboutUs/AboutUsVideo.png" alt="" />
           </div>
           <div className="sellerSpanright" style={{ "padding-left": "40px" }}>
@@ -575,6 +575,11 @@ export default function Home() {
 
         #aboutUsVisionMission{
           background-color:#eaf7ff;
+        }
+
+        #whyRxil .pagePadding{
+          padding-left:5% !important;
+          padding-right:5% !important;
         }
 
       `}</style>

@@ -168,9 +168,21 @@ export default function Home() {
                       realize their growth potentials by facilitating access to
                       capital at competetive rates, in less than 48 hours.
                     </p>
-                    <a style={{ color: "#FF8B00" }}>
+                    {/* <a style={{ color: "#FF8B00" }}>
                       <strong>Know More</strong>
-                    </a>
+                    </a> */}
+
+                    <Link
+                      href={{
+                        pathname: "/aboutUsNew",
+                      }}
+                    >
+                      <a style={{ color: "#FF8B00" }}>
+                        <span>
+                          <strong>Know More</strong>
+                        </span>{" "}
+                      </a>
+                    </Link>
                   </div>
                 </Col>
                 <Col md={7}>
@@ -928,15 +940,13 @@ if (process.browser) {
       $("section#intro").outerHeight() - $(".header").outerHeight()
     );
 
-    $(document).on('click','.card-header',function(){
-      
-      if(!$(this).hasClass('open')){
-          $('.collaps.card-header').removeClass('open');
-          $(this).addClass('open');
+    $(document).on("click", ".card-header", function () {
+      if (!$(this).hasClass("open")) {
+        $(".collaps.card-header").removeClass("open");
+        $(this).addClass("open");
+      } else {
+        $(".collaps.card-header").removeClass("open");
       }
-      else{
-          $('.collaps.card-header').removeClass('open');
-      }
-  })
+    });
   });
 }

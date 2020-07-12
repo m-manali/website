@@ -246,16 +246,211 @@ export default function Home() {
       {/* Why RXil Section ends here */}
 
       {/* History and milestone section starts here */}
-      <section id="historyAndMilestone" className="container theme-widget">
+      <section id="timeline" className="container theme-widget">
         <div
           className="resourcesHeading text-center"
-          style={{ margin: "10px 0px 50px" }}
+          style={{ margin: "10px 0px 0px" }}
         >
           <p>
             <h2 style={{ "font-weight": "650" }}>History & Milestones</h2>
           </p>
         </div>
-        <div className="historyImage"></div>
+        {/* <div className="historyImage"></div> */}
+
+        <Carousel indicators="false">
+          <Carousel.Item>
+            <section className="timeline-container">
+              <div className="monthly-data">
+                <div className="inner-wrap">
+                  <div className="timeline-month">
+                    <div className="month-details">
+                      <p>2008</p>
+                    </div>
+                  </div>
+                  <div className="timeline-content">
+                    <div className="content-top"></div>
+                    <div className="content-bottom"></div>
+                    <p>Financial Sector Reforms (FSR) Committee</p>
+                    <p>NTREES - Trde Receivables Engine for E-discounting </p>
+                    <p>Mexican model(National Financiers - NAFIN)</p>
+                  </div>
+                </div>
+              </div>
+              <div className="monthly-data">
+                <div className="inner-wrap">
+                  <div className="timeline-month">
+                    <div className="month-details">
+                      <p>
+                        DEC
+                        <br />
+                        2014
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-content">
+                    <div className="content-top"></div>
+                    <div className="content-bottom"></div>
+                    <p>RBI Issues guidlines on TReDS</p>
+                    <p>
+                      Called applications from intrested parites for setting up
+                      TReDS exchange{" "}
+                    </p>
+                    <p>SIDBI - NSE have applied along with other parties</p>
+                    {/* <p>
+                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem{" "}
+                    </p>
+                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p> */}
+                  </div>
+                </div>
+              </div>
+              <div className="monthly-data">
+                <div className="inner-wrap">
+                  <div className="timeline-month">
+                    <div className="month-details">
+                      <p>
+                        DEC
+                        <br />
+                        2015
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-content">
+                    <div className="content-top"></div>
+                    <div className="content-bottom"></div>
+                    <p>
+                      RBI gives in principle approval to SIDBI-NSE for operating
+                      TReDS as per the guidelines and under the PSS Act. 2007
+                    </p>
+                    {/* <p>
+                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem{" "}
+                    </p> */}
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div style={{ height: "10px" }}></div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <section className="timeline-container">
+              <div className="monthly-data">
+                <div className="inner-wrap">
+                  <div className="timeline-month">
+                    <div className="month-details">
+                      <p>
+                        {" "}
+                        FEB
+                        <br />
+                        2016
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-content">
+                    <div className="content-top"></div>
+                    <div className="content-bottom"></div>
+                    <p>Receivables Exchange of India Ltd. (RXIL) incorporated as a public limited company under the Companies Act, 2013</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div className="monthly-data">
+                <div className="inner-wrap">
+                  <div className="timeline-month">
+                    <div className="month-details">
+                      <p>
+                        MAY
+                        <br />
+                        2016
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-content">
+                    <div className="content-top"></div>
+                    <div className="content-bottom"></div>
+                    <p>Shareholders Agreement of RXIL signed with investors</p>
+                    
+                    {/* <p>
+                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem{" "}
+                    </p>
+                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p> */}
+                  </div>
+                </div>
+              </div>
+              <div className="monthly-data">
+                <div className="inner-wrap">
+                  <div className="timeline-month">
+                    <div className="month-details">
+                      <p>
+                        DEC
+                        <br />
+                        2016
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-content">
+                    <div className="content-top"></div>
+                    <div className="content-bottom"></div>
+                    <p>
+                    Receivables Exchange of India Ltd. (RXIL) gets final approval from RBI to launch the TReDS platform.
+                    </p>
+                    {/* <p>
+                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem{" "}
+                    </p> */}
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div style={{ height: "10px" }}></div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <section className="timeline-container">
+              <div className="monthly-data">
+                <div className="inner-wrap">
+                  <div className="timeline-month">
+                    <div className="month-details">
+                      <p>
+                        {" "}
+                        Jan
+                        <br />
+                        2017
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-content">
+                    <div className="content-top"></div>
+                    <div className="content-bottom"></div>
+                    <p>TReDS Platform of Receivables Exchange of India Ltd. (RXIL) goes LIVE</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div className="monthly-data">
+                <div className="inner-wrap">
+                  <div className="timeline-month">
+                    <div className="month-details">
+                      <p>
+                        JAN
+                        <br />
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                  <div className="timeline-content">
+                    <div className="content-top"></div>
+                    <div className="content-bottom"></div>
+                    <p>RXIL Change of address</p>
+                    
+                    {/* <p>
+                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem{" "}
+                    </p>
+                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p> */}
+                  </div>
+                </div>
+              </div>
+              
+            </section>
+            <div style={{ height: "10px" }}></div>
+          </Carousel.Item>
+        </Carousel>
       </section>
       {/* History and milestone section ends here */}
 
@@ -509,8 +704,6 @@ export default function Home() {
           text-align: center;
         }
 
-        
-
         .visionImage {
           width: 20%;
         }
@@ -545,7 +738,7 @@ export default function Home() {
         #whyRxil .resourcesHeading p,
         #awards .resourcesHeading p,
         #intro .resourcesHeading p,
-        #historyAndMilestone .resourcesHeading p {
+        #timeline .resourcesHeading p {
           color: #1c77b0;
           position: relative;
           margin-left: 35px;
@@ -555,7 +748,7 @@ export default function Home() {
         #whyRxil .resourcesHeading p:after,
         #awards .resourcesHeading p:after,
         #intro .resourcesHeading p:after,
-        #historyAndMilestone .resourcesHeading p:after {
+        #timeline .resourcesHeading p:after {
           display: block;
           content: "";
           position: absolute;
@@ -573,15 +766,148 @@ export default function Home() {
           height: 550px;
         }
 
-        #aboutUsVisionMission{
-          background-color:#eaf7ff;
+        #aboutUsVisionMission {
+          background-color: #eaf7ff;
         }
 
-        #whyRxil .pagePadding{
-          padding-left:5% !important;
-          padding-right:5% !important;
+        #whyRxil .pagePadding {
+          padding-left: 5% !important;
+          padding-right: 5% !important;
         }
 
+        #timeline {
+          padding: 70px 0 !important;
+          background: #f2f8fc;
+        }
+
+        .timeline-container {
+          border-bottom: 2px solid #000;
+          display: table;
+          table-layout: fixed;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 10%;
+          position: relative;
+          height:420px;
+          min-height: auto;
+        }
+
+        .monthly-data {
+          display: table-cell;
+          height: 100px;
+          text-align: center;
+          vertical-align: bottom;
+        }
+
+        .timeline-month {
+          display: inline-block;
+          position: relative;
+          z-index: 2;
+          padding: 10px;
+          border-radius: 50%;
+          border: 2px solid #000;
+          line-height: 0;
+          line-height: 0;
+        }
+
+        .month-details {
+          display: inline-block;
+          position: relative;
+          z-index: 1;
+          background: #1770b3;
+          color: #fff;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border: 2px solid #000;
+          line-height: 1.3;
+        }
+
+        .timeline-month:after {
+          content: "";
+          width: 100px;
+          height: 100px;
+          background: rgba(187, 170, 170, 0.2);
+          position: absolute;
+          left: 30px;
+          top: 30px;
+          z-index: 0;
+          border-radius: 50%;
+          box-shadow: 0 0 10px #ecf0f3;
+        }
+
+        .month-details p {
+          display: table-cell;
+          width: 100px;
+          height: 100px;
+          vertical-align: middle;
+          font-weight: bold;
+        }
+
+        .inner-wrap {
+          width: 300px;
+          margin: 0 auto;
+        }
+
+        .timeline-content {
+          position: relative;
+          padding: 70px 20px 60px;
+        }
+
+        .timeline-content p {
+          margin-bottom: 10px;
+        }
+
+        .timeline-content p:last-of-type {
+          margin-bottom: 0px;
+        }
+
+        .content-bottom {
+          position: absolute;
+          left: 50%;
+          width: 2px;
+          background: #000;
+          height: 40px;
+          bottom: 5px;
+        }
+
+        .content-top {
+          position: absolute;
+          left: 50%;
+          width: 2px;
+          background: #000;
+          height: 40px;
+          top: 20px;
+        }
+
+        .content-bottom:after {
+          position: absolute;
+          bottom: -10px;
+          left: -4px;
+          display: block;
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #fff;
+          border: 2px solid #000;
+        }
+
+        .content-top:after {
+          position: absolute;
+          top: -12px;
+          left: -5px;
+          display: block;
+          content: "";
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #000;
+        }
+
+        .monthly-data:nth-of-type(even) .month-details {
+          background: #ff8d00;
+        }
       `}</style>
     </div>
   );

@@ -705,7 +705,7 @@ html {
 }
 
 #whoWeAre .carousel-control-next-icon {
-  background: url("/images/RightArrow.png") no-repeat !important;
+  background: url("/images/RIghtArrow.png") no-repeat !important;
   height: 51px;
   width: 86px;
   bottom: 50px;
@@ -991,7 +991,7 @@ a:hover {
   display: flex !important;
   padding-top: 60px;
   margin-left: 0px !important;
-  margin-right: 0px !important; 
+  margin-right: 0px !important;
 }
 
 #aboutUsCards .card {
@@ -1012,26 +1012,25 @@ a:hover {
   transition: all 0.2s ease;
 }
 
-#aboutUsCards .card-body:hover{
+#aboutUsCards .card-body:hover {
   background-color: #ff8b00;
   color: #fff;
 }
 
-#aboutUsCards .card-body:hover .card-title, #aboutUsCards .card-body:hover .card-text{
+#aboutUsCards .card-body:hover .card-title,
+#aboutUsCards .card-body:hover .card-text {
   color: #fff;
 }
 
-
-#aboutUsCards .card-body .card-title{
+#aboutUsCards .card-body .card-title {
   font-size: 40px !important;
   color: #1c77b0;
 }
-#aboutUsCards .card-body .card-text{
+#aboutUsCards .card-body .card-text {
   font-size: 20px !important;
   color: #1c77b0;
   font-weight: 20px !important;
 }
-
 
 #awards .row {
   justify-content: center !important;
@@ -1046,12 +1045,43 @@ a:hover {
 }
 
 #awards .card-body {
- 
   padding-top: 0;
-  
+}
+
+#timeline .carousel-control-prev-icon {
+  background-image: url("/images/aboutUs/HistoryArrowLeft.png") !important;
+  width: 60px;
+  height: 60px;
+}
+
+#timeline .carousel-control-next-icon {
+  background-image: url("/images/aboutUs/HistoryArrowRight.png") !important;
+  width: 60px;
+  height: 60px;
+}
+
+#timeline .carousel-control-prev {
+  top: inherit;
+  bottom: -19px;
+  width: auto;
+  left: 6%;
+  background:rgba(28, 119, 176,1);
+  opacity: 1;
 }
 
 
+#timeline .carousel-control-next {
+  top: inherit;
+  bottom: -19px;
+  width: auto;
+  right: 6%;
+  background:rgba(28, 119, 176,1);
+  opacity: 1;
+}
+
+#timeline .carousel-indicators{
+  display: none;
+}
 /* .img{
   image-rendering: crisp-edges;
 } */

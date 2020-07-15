@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
+import Link from "next/link";
 // import Collapsible from 'react-collapsible';
 
 export default function BlogHome() {
@@ -108,9 +109,15 @@ export default function BlogHome() {
                       <span>5</span>
                     </p>
                   </div>
-                  <a href="#" className="blog-readmore">
-                    Read More...
-                  </a>
+                  <Link
+                    href={{
+                      pathname: "/blog-child",
+                    }}
+                  >
+                    <a href="#" className="blog-readmore">
+                      Read More...
+                    </a>
+                  </Link>
                 </div>
               </figcaption>
             </figure>
@@ -148,9 +155,15 @@ export default function BlogHome() {
                       <span>5</span>
                     </p>
                   </div>
-                  <a href="#" className="blog-readmore">
-                    Read More...
-                  </a>
+                  <Link
+                    href={{
+                      pathname: "/blog-child",
+                    }}
+                  >
+                    <a href="#" className="blog-readmore">
+                      Read More...
+                    </a>
+                  </Link>
                 </div>
               </figcaption>
             </figure>
@@ -188,9 +201,15 @@ export default function BlogHome() {
                       <span>5</span>
                     </p>
                   </div>
-                  <a href="#" className="blog-readmore">
-                    Read More...
-                  </a>
+                  <Link
+                    href={{
+                      pathname: "/blog-child",
+                    }}
+                  >
+                    <a href="#" className="blog-readmore">
+                      Read More...
+                    </a>
+                  </Link>
                 </div>
               </figcaption>
             </figure>
@@ -228,9 +247,15 @@ export default function BlogHome() {
                       <span>5</span>
                     </p>
                   </div>
-                  <a href="#" className="blog-readmore">
-                    Read More...
-                  </a>
+                  <Link
+                    href={{
+                      pathname: "/blog-child",
+                    }}
+                  >
+                    <a href="#" className="blog-readmore">
+                      Read More...
+                    </a>
+                  </Link>
                 </div>
               </figcaption>
             </figure>
@@ -268,9 +293,15 @@ export default function BlogHome() {
                       <span>5</span>
                     </p>
                   </div>
-                  <a href="#" className="blog-readmore">
-                    Read More...
-                  </a>
+                  <Link
+                    href={{
+                      pathname: "/blog-child",
+                    }}
+                  >
+                    <a href="#" className="blog-readmore">
+                      Read More...
+                    </a>
+                  </Link>
                 </div>
               </figcaption>
             </figure>
@@ -308,9 +339,15 @@ export default function BlogHome() {
                       <span>5</span>
                     </p>
                   </div>
-                  <a href="#" className="blog-readmore">
-                    Read More...
-                  </a>
+                  <Link
+                    href={{
+                      pathname: "/blog-child",
+                    }}
+                  >
+                    <a href="#" className="blog-readmore">
+                      Read More...
+                    </a>
+                  </Link>
                 </div>
               </figcaption>
             </figure>
@@ -348,9 +385,15 @@ export default function BlogHome() {
                       <span>5</span>
                     </p>
                   </div>
-                  <a href="#" className="blog-readmore">
-                    Read More...
-                  </a>
+                  <Link
+                    href={{
+                      pathname: "/blog-child",
+                    }}
+                  >
+                    <a href="#" className="blog-readmore">
+                      Read More...
+                    </a>
+                  </Link>
                 </div>
               </figcaption>
             </figure>
@@ -707,6 +750,7 @@ export default function BlogHome() {
 
         .blogHeaderImage {
           width: 100%;
+          height: 90%;
         }
 
         .heroBlogImage {
